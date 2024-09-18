@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    max-width: 1920px;
+    height: 146px;
+    background: var(--bege);
+    box-shadow: 0px 5px 50px rgba(255, 241, 219, 0.5);
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.logoContainer {
+    width: 244px;
+    height: 137px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 40%;
+  
+}
+
+.navItem {
+    font-family: var(--font-sora-semibold);
+    font-size: 1.2rem;
+    line-height: 24px;
+    color: var(--verde-musgo); /* Cor verde musgo */
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none; /* Remove sublinhado padrão */
+}
+
+.Links {
+    text-decoration: none; /* Garante que o link não tenha sublinhado */
+    color: inherit; /* Herdar a cor definida no navItem */
+    height: 150px;
+    width: 100%;
+    
+}
+
+.navItem:hover {
+    color: var(--vermelho); /* Cor ao passar o mouse */
+}
+
+.navItem::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: var(--vermelho); /* Animação vermelha */
+    border-radius: 10px;
+    transform: translateX(-50%);
+    transition: width 0.5s ease;
+}
+
+.navItem:hover::after {
+    width: 100%; /* Expande ao passar o mouse */
+}
+
+ul {
+    display: flex;
+    gap: 60px;
+    list-style: none; /* Remove os marcadores de lista */
+    margin: 0;
+    padding: 0;
+
+
+}
