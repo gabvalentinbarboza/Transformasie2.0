@@ -4,15 +4,15 @@
 :root {
     --branco: #FFFFFF;
     --preto: #000000;
-    --bege: #FDE4A1; /* Corrigido para 'bege' */
-    --cinza-claro: #EDEDED; /* Renomeado para evitar duplicação */
+    --bege: #FDE4A1;
+    --cinza-claro: #EDEDED;
     --vermelho-bordo: #9E1010;
     --amarelo: #FFA800;
     --vermelho: #FE4A45;
     --verde: #248F61;
     --verde-musgo: #073B38;
 }
-  
+
 /* Tipografia */
 :root {
     --font-poppins-bold: 'Poppins-Bold', sans-serif;
@@ -23,52 +23,132 @@
     --font-sora-semibold: 'Sora-SemiBold', sans-serif;
 }
 
-
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/*main*/
+/* Container Principal */
 .Container {
+    position: relative; /* Adicione esta linha para tornar a .Container o ponto de referência */
     width: 100%;
-    height: 800px;
-    margin-top: -550px;
+    height: 900px;
+    margin-top: -450px; /* Certifique-se de que este valor seja necessário */
     display: flex;
+    flex-direction: column;
     justify-content: center;
+   
 }
 
-
-/*H1 começe sua jornada container*/
-.TitleContainer{
+.TitleContainer {
+    position: absolute; /* Posiciona em relação à div pai */
+    top: 0; /* Cola no topo da div pai */
+    left: 0; /* Alinha à esquerda */
     text-align: left;
     display: flex;
-    align-items: center;
     width: 100%;
     height: 150px;
-   padding-left: 50px;
-   
+
+    
 }
-/*H1 começe sua jornada*/
-.Title{
+
+.Title {
+    font-family: var(--font-sora-regular);
+    font-size: 4.5rem;
     color: var(--verde-musgo);
-    font-family: var(--font-sora-regular );
-    font-size: 5rem;
+    padding-left: 50px;
+  
 }
 
-.PopUp{
-    background-color: #248F61;
-    width: 675px;
-    height: 910px;
-}
-.PosterContainer {
-    background-image: url('../../assets/Foto_PopUp.png');
-    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
-    width: 100%; /* Define a largura do container */
-    height: 300px; /* Altura do container, ajuste conforme necessário */
+/* Container do PopUp */
+
+.PopUpContainer {
    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 750px;
 }
 
+.PopUp {
+    display: flex;
+    
+    width: 910px;
+    height: 675px;
+    border-radius: 35px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* Poster da Foto */
+.PosterContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PosterImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35px 0 0 35px;
+}
+
+/* Container da Proposta */
+.PropostaContainer {
+    flex: 1;
+    background-color: var(--vermelho);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 0 35px 35px 0;
+    box-shadow: 0px 0px 17.2369px 17.2369px rgba(100, 147, 158, 0.35);
+}
+
+.PropostaTitle {
+    font-family: var(--font-poppins-bold);
+    font-size: 28px;
+    color: var(--branco);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.TextDireita {
+    font-family: var(--font-poppins-regular);
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--branco);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ButtonProposta {
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 50px;
+    font-family: var(--font-poppins-semibold);
+    font-size: 18px;
+    color: var(--branco);
+    cursor: pointer;
+    text-align: center;
+}
+
+.ButtonProposta:hover {
+    background-color: var(--amarelo);
+    opacity: 0.9;
+}
+
+.TextoSobreImagem {
+    position: absolute; /* Garante que o texto fique sobre a imagem */
+    bottom: 9%; /* Posiciona o texto do meio para baixo */
+    left: 50%; /* Centraliza o texto horizontalmente */
+    transform: translateX(-50%); /* Ajusta a centralização */
+    color: var(--branco); /* Cor do texto */
+    font-family: var(--font-sora-semibold);
+    font-size: 2.3rem;
+    text-align: left; /* Alinha o texto ao centro */
+    padding: 107px; /* Pequeno espaçamento interno */
+    margin-top: 80px;
+    width: 80%; /* Controla a largura do texto */
+    line-height: 50px;
+}

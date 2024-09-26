@@ -21,7 +21,7 @@ function NossosServicos() {
 
         <article className={Styles.ParaSuaEmpresaContainer}>
           <div className={Styles.tituloParaSuaEmpresaContainer}>
-            <h1 className={Styles.tituloParaSuaEmpresa}>Para Sua Empresa</h1>
+            <h1 className={Styles.tituloParaSuaEmpresa}>PARA SUA EMPRESA</h1>
           </div>
 
           <div className={Styles.BlocksParaSuaEmpresaContainer}>
@@ -78,7 +78,7 @@ function NossosServicos() {
 
         <article className={Styles.ParaVoceContainer}>
           <div className={Styles.tituloParaVoceContainer}>
-            <h1 className={Styles.tituloParaVoce}>Para Você</h1>
+            <h1 className={Styles.tituloParaVoce}>PARA VOCÊ</h1>
           </div>
 
           <div className={Styles.BlocksParaVoceContainer}>
