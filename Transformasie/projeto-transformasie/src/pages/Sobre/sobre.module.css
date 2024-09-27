@@ -38,7 +38,16 @@
     width: 100%;
 
   }
+
+  .PopUpContainerSobre{
+    margin-top: 550px;
+  }
   
+  .SobreContainer .Title {
+    font-size: 2rem; /* Ajuste o tamanho da fonte */
+    font-weight: normal; /* Ou use um valor como '500' ou '400' para menos peso */
+    /* Você pode adicionar mais estilos aqui se necessário */
+}
 
   
 

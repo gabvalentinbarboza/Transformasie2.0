@@ -49,9 +49,11 @@
 
 .Title {
     font-family: var(--font-sora-regular);
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color: var(--verde-musgo);
     padding-left: 50px;
+    margin-top: -50px;
+    margin-bottom: 60px;
   
 }
 
@@ -131,6 +133,7 @@
     color: var(--branco);
     cursor: pointer;
     text-align: center;
+    transition: background-color 0.3s ease; /* Transição suave ao mudar a cor */
 }
 
 .ButtonProposta:hover {
@@ -151,4 +154,20 @@
     margin-top: 80px;
     width: 80%; /* Controla a largura do texto */
     line-height: 50px;
+ 
+}
+
+@media (max-width: 768px) {
+    .Title {
+        font-size: 2.5rem; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    .PopUp {
+        width: 100%; /* Faz o PopUp ocupar toda a largura da tela */
+        height: auto; /* Permite altura automática */
+    }
+
+    .PosterImage {
+        height: 50%; /* Ajusta a altura da imagem em telas pequenas */
+    }
 }

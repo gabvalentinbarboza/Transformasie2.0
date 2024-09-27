@@ -5,16 +5,19 @@ import Sobre from './pages/Sobre/Sobre.jsx';
 import Blog from './pages/Blog/Blog.jsx';
 import ParaVoce from './pages/Para_Voce/ParaVoce.jsx';  // Caminho correto
 import ParaSuaEmpresa from './pages/Para_Sua_Empresa/ParasuaEmpresa.jsx';
+import ScrollToTop from './ScrollToTop.jsx';
 
 const RoutesConfig = () => {
   return (
     <Router>
       <Routes>
+     
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/para-voce" element={<ParaVoce />} />  {/* Certifique-se que essa rota está correta */}
         <Route path="/para-sua-empresa" element={<ParaSuaEmpresa />} />
+   
       </Routes>
     </Router>
   );

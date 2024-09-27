@@ -12,7 +12,7 @@ function Home() {
       <main>
         <QuemSomos />
         <NossosServicos />
-        <PopUp />
+        <PopUp title="Começe a sua jornada!"/>
       </main>
       <Footer />
     </div>

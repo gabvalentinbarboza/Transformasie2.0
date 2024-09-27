@@ -45,7 +45,6 @@
 .MissaoContainer,
 .VisaoContainer,
 .ValoresContainer {
-    background-color: #073B38;
     width: 380px;
     height: 450px;
     display: flex;
@@ -55,32 +54,64 @@
 
 }
 
+
 .Circulo {
     background-color: var(--vermelho);
     width: 155px;
-    height: 155px;
-    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    /* Mantém a proporção 1:1 */
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
+
 .IconMissao {
-    width: 50%;
-    height: 50%;
-}
-.IconVisao {
-    width: 50%;
-    height: 50%;
-}
-.IconValores {
-    width: 50%;
-    height: 50%;
+    width: 50px;
+    height: 50px;
 }
 
-.TituloContainer{
-    background-color: #852d2d;
+.IconVisao {
+    width: 50px;
+    height: 50px;
+}
+
+.IconValores {
+    width: 50px;
+    height: 50px;
+}
+
+.TituloContainer {
+
     width: 100%;
     height: 50px;
- 
+    text-align: center;
+    font-family: var(--font-sora-regular);
+    color: var(--vermelho-bordo);
+    margin-top: 20px;
+}
+
+.Titulo {
+    font-size: 1.5rem;
+}
+
+
+.pContainer {
+
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragrafo {
+margin-top: 50px;
+    width: 70%;
+    height: 95%;
+    font-family: var(--font-poppins-regular);
+    color: var(--verde-musgo);
+    font-size: 1.25rem;
 }

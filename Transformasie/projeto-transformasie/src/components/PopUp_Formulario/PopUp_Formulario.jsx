@@ -3,11 +3,11 @@ import Styles from './popup_formulario.module.css';
 import { Link } from 'react-router-dom';
 import FotoIzabel from '../../assets/Foto_PopUp.png';
 
-function PopUp() {
+function PopUp({ title }) { // Aceitando a prop title
     return (
         <section className={Styles.Container}>
             <div className={Styles.TitleContainer}>
-                <h1 className={Styles.Title}>Comece a sua jornada!</h1>
+                <h1 className={Styles.Title}>{title}</h1> {/* Usando a prop title */}
             </div>
 
             <section className={Styles.PopUpContainer}>

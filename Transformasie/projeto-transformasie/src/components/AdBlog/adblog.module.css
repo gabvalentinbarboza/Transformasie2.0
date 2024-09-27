@@ -1,0 +1,126 @@
+@import url('/fonts/fonts.css');
+
+/* Definindo variáveis de cores */
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --bege: #FDE4A1;
+    --cinza-claro: #EDEDED;
+    --vermelho-bordo: #9E1010;
+    --amarelo: #FFA800;
+    --vermelho: #FE4A45;
+    --verde: #248F61;
+    --verde-musgo: #073B38;
+    --laranja: #E87A00;
+}
+
+/* Tipografia */
+:root {
+    --font-poppins-bold: 'Poppins-Bold', sans-serif;
+    --font-poppins-regular: 'Poppins-Regular', sans-serif;
+    --font-sora-bold: 'Sora-Bold', sans-serif;
+    --font-sora-regular: 'Sora-Regular', sans-serif;
+    --font-sora-semibold: 'Sora-SemiBold', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.AdBlogContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.TituloContainer {
+    position: absolute;
+    top: -100px;
+    left: 114px;
+    width: 100%;
+    
+}
+
+.Titulo {
+    font-family: var(--font-sora-bold);
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 60px;
+    margin-left: -80px;
+    color: var(--verde-musgo);
+}
+
+.AdBlog {
+    width: 90%; /* Cobre a largura total do container */
+    height: 680px;
+    background: url('../../assets/fundo_ad_blog_image.png') no-repeat center/cover;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.TextoContainer {
+    width: 807px;
+    height: 312px;
+    margin-top: 54px;
+    margin-left: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+.Texto {
+    font-family: var(--font-sora-bold);
+    font-size: 1.5rem;
+    line-height: 30.5px;
+    color: var(--verde-musgo);
+    width: 80%;
+    height: 100%;
+}
+
+.ButtonContainer {
+    width: 390px;
+    height: 150px;
+    position: absolute;
+    bottom: 150px;
+    right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Button {
+    width: 360px;
+    height: 80px;
+    background: var(--laranja);
+    border: none;
+    border-radius: 50px;
+    font-family: var(--font-sora-bold);
+    font-size: 36px;
+    color: var(--branco);
+    cursor: pointer;
+    text-align: center;
+    line-height: 88px; /* Alinha verticalmente o texto */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Button:hover {
+    background-color: var(--amarelo);
+    transition: 0.5s;
+}
+.Button::after:hover {
+    background-color: var(--laranja);
+    transition: 0.5s;
+}
