@@ -10,8 +10,8 @@ import ScrollToTop from './ScrollToTop.jsx';
 const RoutesConfig = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
-     
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/blog" element={<Blog />} />
