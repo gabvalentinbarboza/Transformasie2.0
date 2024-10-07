@@ -10,7 +10,6 @@ import AdBlog from '../../components/AdBlog/AdBlog';
 import PopUp from '../../components/PopUp_Formulario/PopUp_Formulario';
 
 
-import ScrollToTop from '../../ScrollToTop';
 
 
 function Sobre() {
