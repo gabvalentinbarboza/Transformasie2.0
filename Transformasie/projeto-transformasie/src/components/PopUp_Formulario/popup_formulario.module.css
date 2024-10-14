@@ -74,7 +74,6 @@
     width: 910px;
     height: 675px;
     border-radius: 35px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 }
 
@@ -102,7 +101,7 @@
     justify-content: center;
     padding: 30px;
     border-radius: 0 35px 35px 0;
-    box-shadow: 0px 0px 17.2369px 17.2369px rgba(100, 147, 158, 0.35);
+   
 }
 
 .PropostaTitle {
@@ -143,8 +142,8 @@
 
 .TextoSobreImagem {
     position: absolute; /* Garante que o texto fique sobre a imagem */
-    bottom: 9%; /* Posiciona o texto do meio para baixo */
-    left: 50%; /* Centraliza o texto horizontalmente */
+    bottom: 12%; /* Posiciona o texto do meio para baixo */
+    left: 55%; /* Centraliza o texto horizontalmente */
     transform: translateX(-50%); /* Ajusta a centralização */
     color: var(--branco); /* Cor do texto */
     font-family: var(--font-sora-semibold);

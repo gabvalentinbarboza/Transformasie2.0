@@ -53,28 +53,50 @@
   background-color: var(--bege);
   width: 100%;
   height: 50%;
-  border-radius: 50px;
+  border-radius:  0px 0px 50px 50px;
   margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .ParaVoceContainer {
   background-color: var(--verde-musgo);
   width: 100%;
   height: 30%;
-  border-radius: 50px;
-}
-
-.BlocksParaVoceContainer, .BlocksParaSuaEmpresaContainer {
-  width: 80%;
-  height: 65%;
+  border-radius: 0px 0px 50px 50px;
+  margin-bottom: 100px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;     
-  margin: 0 auto;       
-  gap: 40px;   
+  align-items: center;
 }
 
+.BlocksParaSuaEmpresaContainer {
+  width: 80%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  grid-gap: 40px; /* Espaçamento entre os blocos */
+  justify-content: space-around ;/* Centraliza os itens */
+  align-items: center;
+  margin: 0 auto;
+}
+
+.BlocksParaVoceContainer {
+  width: 80%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas para "Para Você" */
+  grid-gap: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
 .containerArticleServices {
   height: 2500px;
   width: 100%;
@@ -110,7 +132,18 @@
   justify-content: center;
 }
 
-.ParaSuaEmpresaLink, .ParaVoceLink {
+.ParaSuaEmpresaLink {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 1s ease, filter 0.4s ease; /* Adicionado o filtro na transição */
+}
+
+.ParaVoceLink{
   height: 300px;
   width: 300px;
   display: flex;
@@ -126,12 +159,24 @@
   filter: brightness(0.8); /* Adiciona um leve escurecimento no hover */
 }
 
-.imageContainerParaSuaEmpresa, .imageContainerParaVoce {
+.imageContainerParaSuaEmpresa {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 300px;
   height: 300px; 
+  background-size: 160%; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  border-radius: 15%;
+  transition: filter 0.4s ease;
+}
+ .imageContainerParaVoce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  height: 340px; 
   background-size: 160%; 
   background-position: center; 
   background-repeat: no-repeat;

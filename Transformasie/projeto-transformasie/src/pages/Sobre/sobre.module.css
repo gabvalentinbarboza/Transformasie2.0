@@ -26,29 +26,43 @@
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
 
-  main {
-    flex: 1;
-    width: 100%;
-
-  }
 
   .PopUpContainerSobre{
     margin-top: 550px;
   }
   
-  .SobreContainer .Title {
-    font-size: 2rem; /* Ajuste o tamanho da fonte */
-    font-weight: normal; /* Ou use um valor como '500' ou '400' para menos peso */
-    /* Você pode adicionar mais estilos aqui se necessário */
-}
 
   
 
 
+/* Estilos básicos para a Home */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Certifique-se de que o Header e Footer tenham espaçamento */
+header, footer {
+  width: 100%;
+}
+
+/* Ajuste o conteúdo principal para preencher o espaço entre Header e Footer */
+main {
+  flex: 1;
+  width: 100%;
+}

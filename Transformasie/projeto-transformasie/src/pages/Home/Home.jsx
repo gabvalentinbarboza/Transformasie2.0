@@ -7,7 +7,7 @@ import PopUp from '../../components/PopUp_Formulario/PopUp_Formulario';
 
 function Home() {
   return (
-    <div>
+    <>
       <Header />
       <main>
         <QuemSomos />
@@ -15,7 +15,7 @@ function Home() {
         <PopUp title="Começe a sua jornada!"/>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

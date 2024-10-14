@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Styles from './sobre.module.css';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer'
@@ -14,23 +14,23 @@ import PopUp from '../../components/PopUp_Formulario/PopUp_Formulario';
 
 function Sobre() {
     return (
-    <div>
-        <Header />
-        <main>
-            <SobreNos />
-            <MissaoVisaoValores />
-            <OqueOferecemos />
-            <AdBlog />
-            <div className={Styles.PopUpContainerSobre}>
-            <PopUp title="Ficou interessado? Receba agora uma proposta!"/>
-            </div>
-            
-        </main>
-       <Footer />
-    </div>
+        <>
+            <Header />
+            <main>
+                <SobreNos />
+                <MissaoVisaoValores />
+                <OqueOferecemos />
+                <AdBlog />
+                <div className={Styles.PopUpContainerSobre}>
+                    <PopUp title="Ficou interessado? Receba agora uma proposta!" />
 
-        );
-    }
-    
-        export default Sobre;
-    
+                </div>
+
+            </main>
+            <Footer />
+        </>
+
+    );
+}
+
+export default Sobre;

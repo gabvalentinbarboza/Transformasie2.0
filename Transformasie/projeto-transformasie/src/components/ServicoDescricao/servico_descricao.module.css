@@ -34,6 +34,7 @@
     padding: 50px;
     background-color: var(--branco); /* Fundo principal da seção */
     border-radius: 20px;
+  
 }
 
 /* Título principal */
@@ -41,6 +42,10 @@
     position: relative;
     width: 90%;
     margin-bottom: 40px;
+    text-align: left;
+   
+    display: flex;
+    align-items: flex-start;
 }
 
 .Titulo {
@@ -48,8 +53,10 @@
     font-weight: 800;
     font-size: 56px;
     line-height: 70px;
-    color: var(--vermelho-bordo);
+    color: var(--vermelho);
     margin-bottom: 20px;
+    text-align: left;
+  
 }
 
 /* Imagem do serviço */
@@ -69,12 +76,17 @@
 /* Subtítulo */
 .SubtituloContainer {
     margin-top: 30px;
+    text-align: left;
+   
+    display: flex;
+    align-items: flex-start;
 }
 
 .Subtitulo {
     font-family: var(--font-poppins-semibold);
     font-size: 42px;
     color: var(--verde-musgo);
+   
 }
 
 /* Texto de descrição */
@@ -102,6 +114,8 @@
 
 /* Botão de receber proposta */
 .BotaoContainer {
+    display: flex;
+    align-items: flex-start;
     margin-top: 30px;
 }
 

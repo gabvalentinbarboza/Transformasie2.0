@@ -10,7 +10,7 @@ function MissaoVisaoValores() {
 
             <article className={Styles.MissaoContainer}>
                 <div className={Styles.Circulo}>
-                    <img src={IconMissao} className={Styles.IconVisao} />
+                    <img src={IconMissao} className={Styles.IconMissao} />
                 </div>
 
                 <div className={Styles.TituloContainer}>
@@ -29,7 +29,7 @@ function MissaoVisaoValores() {
 
             <article className={Styles.VisaoContainer}>
                 <div className={Styles.Circulo}>
-                    <img src={IconVisao} className={Styles.IconMissao} />
+                    <img src={IconVisao} className={Styles.IconVisao} />
                 </div>
 
                 <div className={Styles.TituloContainer}>
@@ -49,10 +49,10 @@ function MissaoVisaoValores() {
                     <img src={IconValores} className={Styles.IconValores} />
                 </div>
 
-
                 <div className={Styles.TituloContainer}>
                     <h1 className={Styles.Titulo}>Nossos Valores</h1>
                 </div>
+
                 <div className={Styles.pContainer}>
                     <p className={Styles.paragrafo}>
                         Diversidade & Inclusão<br />
@@ -60,10 +60,9 @@ function MissaoVisaoValores() {
                         Transparência Confiança Integridade Respeito
                     </p>
                 </div>
-
             </article>
 
-        </section >
+        </section>
     );
 }
 
