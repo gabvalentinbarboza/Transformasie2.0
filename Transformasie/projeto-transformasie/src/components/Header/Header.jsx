@@ -10,7 +10,7 @@ function Header() {
         <img src={logo} alt="Transformasie Inteligencia Financeira" className={Styles.logo} />
       </div>
       <nav className={Styles.navContainer}>
-        <ul>
+        <ul className={Styles.UlHeader}>
           <li className={Styles.navItem}>
             <Link to="/" className={Styles.Links}>Home</Link> {/* Link para a página Home */}
           </li>

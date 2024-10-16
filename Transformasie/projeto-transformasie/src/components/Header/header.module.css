@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-header {
+.header {
     width: 100%;
     height: 146px;
     background: var(--bege);
@@ -18,13 +18,14 @@ header {
 }
 
 .logoContainer {
-    width: 244px;
-    height: 137px;
+    width: 100%; /* O logo ocupará 100% da largura disponível */
+    max-width: 244px; /* Limita o tamanho máximo do logo */
+    height: auto; /* Permite que a altura seja ajustada automaticamente */
 }
 
 .logo {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Ocupa toda a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 .navContainer {
@@ -77,7 +78,7 @@ header {
     width: 100%; /* Expande ao passar o mouse */
 }
 
-ul {
+.UlHeader {
     display: flex;
     gap: 60px;
     list-style: none; /* Remove os marcadores de lista */
@@ -85,4 +86,108 @@ ul {
     padding: 0;
 
 
+}
+
+@media (max-width: 1241px) {
+    .navItem {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte */
+    }
+    .navContainer {
+        width: 70%; /* Aumenta o espaçamento entre os itens */
+    }
+}
+
+@media (max-width: 1067px) {
+    .navItem {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    }
+    .navContainer {
+        width: 60%; /* Aumenta o espaçamento entre os itens */
+    }
+
+    .navContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        height: 40%;
+      margin-left: 20px;
+    }
+}
+
+
+/* Ajustes para telas de 1024px ou menores */
+@media (max-width: 1024px) {
+    .header {
+        height: 120px; /* Ajusta a altura do header */
+    }
+    .logoContainer {
+        width: 200px; /* Reduz o tamanho do logo */
+        height: 120px;
+    }
+    .navItem {
+        font-size: 0.9rem; /* Reduz ainda mais o tamanho da fonte */
+    }
+    .navContainer {
+        width: 80%; /* Aumenta ainda mais o espaçamento entre os itens */
+    }
+}
+
+@media (max-width: 880px) {
+    .header{
+        padding: 0% 10% 0% 10%;
+    }
+    .navContainer {
+        width: 100%; 
+        background-color: aqua;/* Aumenta o espaçamento entre os itens */
+    }
+
+    .navItem {
+        font-size: 0.8rem; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    .UlHeader {
+        display: flex;
+        gap: 50px;
+        list-style: none; /* Remove os marcadores de lista */
+        margin: 0;
+        padding: 0;
+    
+    
+    }
+}
+/* Ajustes para telas de 768px ou menores (tamanho tablet) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Empilha o logo e a navegação */
+        height: auto;
+        padding: 10px;
+    }
+    .navContainer {
+        flex-direction: column; /* Navegação em coluna */
+        width: 100%;
+        gap: 20px;
+    }
+    .logoContainer {
+        width: 150px; /* Reduz ainda mais o logo */
+        height: 100px;
+    }
+    .navItem {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+    }
+}
+
+/* Ajustes para telas de 480px ou menores (tamanho celular) */
+@media (max-width: 480px) {
+    .navItem {
+        font-size: 0.7rem; /* Tamanho da fonte para celular */
+        padding: 10px 0;
+    }
+    .logoContainer {
+        width: 120px; /* Ajusta o tamanho do logo para celulares */
+        height: 80px;
+    }
+    .navContainer {
+        gap: 10px;
+    }
 }

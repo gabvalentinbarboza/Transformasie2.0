@@ -28,13 +28,13 @@
     box-sizing: border-box;
 }
 /* Container principal do serviço */
-.ParaSuaEmpresaContainer {
+.Container {
     position: relative;
     width: 100%;
     padding: 50px;
     background-color: var(--branco); /* Fundo principal da seção */
     border-radius: 20px;
-  
+  margin: 100px 0px 100px 0px;
 }
 
 /* Título principal */
@@ -49,6 +49,7 @@
 }
 
 .Titulo {
+    width: 100%;
     font-family: var(--font-poppins-bold);
     font-weight: 800;
     font-size: 56px;
@@ -132,6 +133,7 @@
     border: none;
     cursor: pointer;
     transition: background 0.3s ease;
+    margin-top: 50px;
 }
 
 .BotaoReceberProposta:hover {

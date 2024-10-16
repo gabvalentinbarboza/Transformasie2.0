@@ -5,7 +5,7 @@ import Styles from './servico_descricao.module.css';
 
 function ServicoDescricao({ titulo, imagem, subtitulo, texto }) {
     return (
-        <section className={Styles.ParaSuaEmpresaContainer}>
+        <section className={Styles.Container}>
 
             <div className={Styles.TituloContainer}>
                 <h1 className={Styles.Titulo}>{titulo}</h1>
