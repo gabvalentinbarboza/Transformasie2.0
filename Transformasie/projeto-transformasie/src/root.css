@@ -22,3 +22,33 @@
     --font-sora-regular: 'Sora-Regular', sans-serif;
     --font-sora-semibold: 'Sora-SemiBold', sans-serif;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--branco);
+    min-height: 100vh;
+  }
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Certifique-se de que o Header e Footer tenham espaçamento */
+  header, footer {
+    width: 100%;
+  }
+  
+  /* Ajuste o conteúdo principal para preencher o espaço entre Header e Footer */
+  main {
+    flex: 1;
+    width: 100%;
+  }

@@ -8,8 +8,8 @@ import whatsappIcon from '../../assets/icons/Whatsapp_icon.png'; // Ícone do Wh
 
 function QuemSomos() {
   return (
-    <section className={Styles.Container}>
-      <img src={fundoImage} className={Styles.background} alt="Background" /> {/* Imagem de fundo */}
+    <section className={Styles.Container}  style={{ backgroundImage: `url(${fundoImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      {/* Imagem de fundo */}
       
       <section className={Styles.sectionContainer}>
         {/* Seção Quem Somos */}

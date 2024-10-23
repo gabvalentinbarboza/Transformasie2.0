@@ -1,7 +1,29 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --bege: #FDE4A1; /* Corrigido para 'bege' */
+    --cinza-claro: #EDEDED; /* Renomeado para evitar duplicação */
+    --vermelho-bordo: #9E1010;
+    --amarelo: #FFA800;
+    --vermelho: #FE4A45;
+    --verde: #248F61;
+    --verde-musgo: #073B38;
+}
+  
+/* Tipografia */
+:root {
+    --font-poppins-bold: 'Poppins-Bold', sans-serif;
+    --font-poppins-regular: 'Poppins-Regular', sans-serif;
+    --font-poppins-semibold: 'Poppins-SemiBold', sans-serif;
+    --font-sora-bold: 'Sora-Bold', sans-serif;
+    --font-sora-regular: 'Sora-Regular', sans-serif;
+    --font-sora-semibold: 'Sora-SemiBold', sans-serif;
 }
 
 .header {
@@ -18,14 +40,19 @@
 }
 
 .logoContainer {
-    width: 100%; /* O logo ocupará 100% da largura disponível */
-    max-width: 244px; /* Limita o tamanho máximo do logo */
-    height: auto; /* Permite que a altura seja ajustada automaticamente */
+    width: 100%;
+    /* O logo ocupará 100% da largura disponível */
+    max-width: 244px;
+    /* Limita o tamanho máximo do logo */
+    height: auto;
+    /* Permite que a altura seja ajustada automaticamente */
 }
 
 .logo {
-    width: 100%; /* Ocupa toda a largura do container */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100%;
+    /* Ocupa toda a largura do container */
+    height: auto;
+    /* Mantém a proporção da imagem */
 }
 
 .navContainer {
@@ -34,31 +61,36 @@
     align-items: center;
     width: 60%;
     height: 40%;
-  
+
 }
 
 .navItem {
     font-family: var(--font-sora-semibold);
     font-size: 1.2rem;
     line-height: 24px;
-    color: var(--verde-musgo); /* Cor verde musgo */
+    color: var(--verde-musgo);
+    /* Cor verde musgo */
     position: relative;
     cursor: pointer;
     padding: 5px;
     text-align: center;
-    text-decoration: none; /* Remove sublinhado padrão */
+    text-decoration: none;
+    /* Remove sublinhado padrão */
 }
 
 .Links {
-    text-decoration: none; /* Garante que o link não tenha sublinhado */
-    color: inherit; /* Herdar a cor definida no navItem */
+    text-decoration: none;
+    /* Garante que o link não tenha sublinhado */
+    color: inherit;
+    /* Herdar a cor definida no navItem */
     height: 150px;
     width: 100%;
-    
+
 }
 
 .navItem:hover {
-    color: var(--vermelho); /* Cor ao passar o mouse */
+    color: var(--vermelho);
+    /* Cor ao passar o mouse */
 }
 
 .navItem::after {
@@ -68,41 +100,50 @@
     left: 50%;
     width: 0;
     height: 3px;
-    background: var(--vermelho); /* Animação vermelha */
+    background: var(--vermelho);
+    /* Animação vermelha */
     border-radius: 10px;
     transform: translateX(-50%);
     transition: width 0.5s ease;
 }
 
 .navItem:hover::after {
-    width: 100%; /* Expande ao passar o mouse */
+    width: 100%;
+    /* Expande ao passar o mouse */
 }
 
 .UlHeader {
     display: flex;
     gap: 60px;
-    list-style: none; /* Remove os marcadores de lista */
+    list-style: none;
+    /* Remove os marcadores de lista */
     margin: 0;
     padding: 0;
 
 
 }
 
-@media (max-width: 1241px) {
+@media (max-width: 1242px) {
     .navItem {
-        font-size: 1.2rem; /* Reduz o tamanho da fonte */
+        font-size: 1.2rem;
+        /* Reduz o tamanho da fonte */
     }
+
     .navContainer {
-        width: 70%; /* Aumenta o espaçamento entre os itens */
+        width: 70%;
+        /* Aumenta o espaçamento entre os itens */
     }
 }
 
 @media (max-width: 1067px) {
     .navItem {
-        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+        font-size: 1.1rem;
+        /* Reduz o tamanho da fonte */
     }
+
     .navContainer {
-        width: 60%; /* Aumenta o espaçamento entre os itens */
+        width: 60%;
+        /* Aumenta o espaçamento entre os itens */
     }
 
     .navContainer {
@@ -111,7 +152,15 @@
         align-items: center;
         width: 70%;
         height: 40%;
-      margin-left: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:1090px) {
+    .navContainer {
+
+        margin-right: 25px;
+
     }
 }
 
@@ -119,75 +168,235 @@
 /* Ajustes para telas de 1024px ou menores */
 @media (max-width: 1024px) {
     .header {
-        height: 120px; /* Ajusta a altura do header */
+        height: 130px;
+        /* Ajusta a altura do header */
     }
+
     .logoContainer {
-        width: 200px; /* Reduz o tamanho do logo */
+        width: 200px;
+        /* Reduz o tamanho do logo */
         height: 120px;
     }
-    .navItem {
-        font-size: 0.9rem; /* Reduz ainda mais o tamanho da fonte */
-    }
+
     .navContainer {
-        width: 80%; /* Aumenta ainda mais o espaçamento entre os itens */
+        width: 80%;
+        /* Aumenta ainda mais o espaçamento entre os itens */
+    }
+
+    .navItem {
+
+        font-size: 1.2rem;
     }
 }
 
-@media (max-width: 880px) {
-    .header{
-        padding: 0% 10% 0% 10%;
-    }
-    .navContainer {
-        width: 100%; 
-        background-color: aqua;/* Aumenta o espaçamento entre os itens */
-    }
+@media (max-width: 1000px) {
 
     .navItem {
-        font-size: 0.8rem; /* Reduz ainda mais o tamanho da fonte */
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 920px) {
+
+    .navContainer {
+        width: 70%;
+        left: 50px;
+
     }
 
     .UlHeader {
+        height: 100%;
         display: flex;
-        gap: 50px;
-        list-style: none; /* Remove os marcadores de lista */
+        gap: 40px;
+        list-style: none;
+        /* Remove os marcadores de lista */
         margin: 0;
         padding: 0;
-    
-    
+        display: flex;
+        justify-content: center;
+
+
     }
-}
-/* Ajustes para telas de 768px ou menores (tamanho tablet) */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column; /* Empilha o logo e a navegação */
-        height: auto;
-        padding: 10px;
-    }
-    .navContainer {
-        flex-direction: column; /* Navegação em coluna */
-        width: 100%;
-        gap: 20px;
-    }
+
     .logoContainer {
-        width: 150px; /* Reduz ainda mais o logo */
-        height: 100px;
+        margin-right: -45px;
     }
+
     .navItem {
-        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+        height: 100%;
     }
 }
 
-/* Ajustes para telas de 480px ou menores (tamanho celular) */
-@media (max-width: 480px) {
+@media (max-width: 846px) {
+
     .navItem {
-        font-size: 0.7rem; /* Tamanho da fonte para celular */
-        padding: 10px 0;
+        font-size: 0.9rem;
     }
+
     .logoContainer {
-        width: 120px; /* Ajusta o tamanho do logo para celulares */
-        height: 80px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
+}
+
+@media (max-width: 820px) {
+
+    .UlHeader {
+        gap: 23px;
+    }
+}
+
+/* Ajustes para telas de 768px ou menores (tamanho tablet) */
+@media (max-width: 768px) {
+    .navItem {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 705px) {
+    .header {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+
     .navContainer {
-        gap: 10px;
+        height: auto;
+
+        width: 65%;
+        justify-content: center;
+    }
+
+
+    .UlHeader {
+
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 35px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+      
+
+    }
+
+    .logoContainer
+    {
+        width: 40%;
+        margin-bottom: 25px;
+    }
+
+    .navItem {
+        width:max-content;
+        font-size: 1.5rem;
+   
+    }
+    .navItem::after
+    {
+        bottom: -15px;
+    }
+    
+}
+
+/* Ícones */
+.icon {
+    display: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    z-index: 200;
+    background: none; /* Remove qualquer fundo */
+    border: none;     /* Remove bordas */
+    padding: 0;       /* Remove preenchimento */
+}
+
+/* Estilo específico para o ícone de menu */
+.menuIcon {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Ajustes para telas menores que 490px */
+@media (max-width: 490px) {
+    .header {
+        height: 148px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navContainer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: auto;
+        background-color: var(--branco);
+        border-radius: 0 0 0 25px;
+        z-index: 100;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 35px;
+        padding-left: 10px;
+        margin-left: 28.38%;
+    
+        /* Estado inicial da animação */
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    }
+    
+    .navContainer.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .icon {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        width: 35px;
+        height: 35px;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    .menuIcon {
+        width: 35px;
+        height: 35px;
+        z-index: 101;
+    }
+
+    .ulHeader {
+        flex-direction: column;
+        padding: 10px 0;
+        align-items: flex-start; /* Alinha os links à esquerda */
+        margin-left: 30px; /* Distância entre os links e o ícone */
+    }
+
+    .navItem {
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+
+    .logoContainer {
+        width: auto;
+        padding-left: 0;
+        justify-content: flex-start;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+
+    .logo {
+        width: 140px;
+        height: auto;
     }
 }
