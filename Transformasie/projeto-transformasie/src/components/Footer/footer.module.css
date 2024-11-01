@@ -4,36 +4,37 @@
 
 /* Definindo variáveis de cores */
 :root {
-    --branco: #FFFFFF;
-    --preto: #000000;
-    --bege: #FDE4A1;
-    --cinza-claro: #EDEDED;
-    --vermelho-bordo: #9E1010;
-    --amarelo: #FFA800;
-    --vermelho: #FE4A45;
-    --verde: #248F61;
-    --verde-musgo: #073B38;
+  --branco: #FFFFFF;
+  --preto: #000000;
+  --bege: #FDE4A1;
+  --cinza-claro: #EDEDED;
+  --vermelho-bordo: #9E1010;
+  --amarelo: #FFA800;
+  --vermelho: #FE4A45;
+  --verde: #248F61;
+  --verde-musgo: #073B38;
 }
 
 /* Tipografia */
 :root {
-    --font-poppins-bold: 'Poppins-Bold', sans-serif;
-    --font-poppins-regular: 'Poppins-Regular', sans-serif;
-    --font-poppins-semibold: 'Poppins-SemiBold', sans-serif;
-    --font-sora-bold: 'Sora-Bold', sans-serif;
-    --font-sora-regular: 'Sora-Regular', sans-serif;
-    --font-sora-semibold: 'Sora-SemiBold', sans-serif;
+  --font-poppins-bold: 'Poppins-Bold', sans-serif;
+  --font-poppins-regular: 'Poppins-Regular', sans-serif;
+  --font-poppins-semibold: 'Poppins-SemiBold', sans-serif;
+  --font-sora-bold: 'Sora-Bold', sans-serif;
+  --font-sora-regular: 'Sora-Regular', sans-serif;
+  --font-sora-semibold: 'Sora-SemiBold', sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .footer {
   background-color: var(--vermelho-bordo);
   width: 100%;
-  min-height: 415px; /* Altura mínima, mas ajustável conforme necessário */
+  min-height: 415px;
+  /* Altura mínima, mas ajustável conforme necessário */
   box-shadow: 0px 5px 50px rgba(255, 241, 219, 0.5);
   border-radius: 45px 45px 0px 0px;
   display: flex;
@@ -47,33 +48,25 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start; /* Alinha verticalmente ao topo */
-  padding: 20px 50px; /* Adicionando padding para espaçamento */
+  align-items: flex-start;
+  /* Alinha verticalmente ao topo */
+  padding: 20px 50px;
+  /* Adicionando padding para espaçamento */
 }
 
 .logoContainer {
   display: flex;
-  align-items: center; /* Alinha o logo verticalmente ao centro */
-  margin-right: 20px; /* Ajusta o espaçamento à direita */
+  align-items: center;
+  /* Alinha o logo verticalmente ao centro */
+  margin-right: 20px;
+  /* Ajusta o espaçamento à direita */
 }
 
 .logo {
-  max-height: 200px; /* Ajusta a altura do logo se necessário */
+  max-height: 200px;
+  /* Ajusta a altura do logo se necessário */
 }
 
-.footerSections {
-  display: flex;
-  flex-direction: row; /* Alinha os footerSections lado a lado */
-  width: 100%;
-  justify-content: space-between; /* Espaça as sections igualmente */
-}
-
-.footerSection {
-  width: 24%; /* Ajuste a largura conforme necessário */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo do section */
-}
 
 /* Atualizado para alinhar a nav na mesma altura */
 .nav {
@@ -81,8 +74,10 @@
   height: 65%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinha os itens da nav ao início do container */
-  margin-top: 25px; /* Remove margem superior para alinhamento */
+  align-items: flex-start;
+  /* Alinha os itens da nav ao início do container */
+  margin-top: 25px;
+  /* Remove margem superior para alinhamento */
 }
 
 /* Alinhando as navs e títulos */
@@ -93,72 +88,100 @@
   padding: 0;
   margin: 0;
   gap: 60px;
-  list-style: none; /* Remove os marcadores de lista */
+  list-style: none;
+  /* Remove os marcadores de lista */
 }
 
 
 
 .titleContainer {
   height: 50px;
-  width: 100%; /* Faz com que o container do título ocupe toda a largura disponível */
+  width: 100%;
+  /* Faz com que o container do título ocupe toda a largura disponível */
   display: flex;
-  justify-content: flex-start; /* Alinha horizontalmente o título dentro do container */
-  align-items: flex-start; /* Alinha o título verticalmente ao centro */
-  padding-bottom: 50px; /* Adiciona algum espaçamento abaixo do título */
+  justify-content: flex-start;
+  /* Alinha horizontalmente o título dentro do container */
+  align-items: flex-start;
+  /* Alinha o título verticalmente ao centro */
+  padding-bottom: 50px;
+  /* Adiciona algum espaçamento abaixo do título */
 }
 
 .navTitle {
   font-family: var(--font-sora-semibold);
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--branco);
-  text-align: left; /* Alinha o texto à esquerda */
-  margin: 0; /* Remove margem superior e inferior */
+  text-align: left;
+  /* Alinha o texto à esquerda */
+  margin: 0;
+  /* Remove margem superior e inferior */
 }
 
 /* Ajuste de espaçamento e alinhamento */
 .navItem {
-  display: flex; /* Adiciona flexbox para alinhamento horizontal */
-  align-items: center; /* Alinha verticalmente ícone e texto */
+  display: flex;
+  /* Adiciona flexbox para alinhamento horizontal */
+  align-items: center;
+  /* Alinha verticalmente ícone e texto */
   height: 45px;
-  margin: -15px 0; /* Reduz o espaço entre os itens */
-  text-align: left; /* Alinha o texto à esquerda */
-  width: 100%; /* Faz com que o item ocupe toda a largura disponível */
-  padding: 5px 0; /* Reduz o padding interno */
-  box-sizing: border-box; /* Inclui padding e borda no tamanho total do elemento */
-  position: relative; /* Necessário para o ::after funcionar corretamente */
+  margin: -15px 0;
+  /* Reduz o espaço entre os itens */
+  text-align: left;
+  /* Alinha o texto à esquerda */
+  width: 100%;
+  /* Faz com que o item ocupe toda a largura disponível */
+  padding: 5px 0;
+  /* Reduz o padding interno */
+  box-sizing: border-box;
+  /* Inclui padding e borda no tamanho total do elemento */
+  position: relative;
+  /* Necessário para o ::after funcionar corretamente */
 }
 
 
 .Links {
   font-family: var(--font-poppins-semibold);
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   color: var(--branco);
   text-decoration: none;
-  margin-left: 10px; /* Adiciona espaço entre o ícone e o link */
-  position: relative; /* Adiciona contexto para o posicionamento do pseudo-elemento */
+  margin-left: 10px;
+  /* Adiciona espaço entre o ícone e o link */
+  position: relative;
+  /* Adiciona contexto para o posicionamento do pseudo-elemento */
 }
 
 .Links:hover {
-  color: var(--branco); /* Cor ao passar o mouse */
+  color: var(--branco);
+  /* Cor ao passar o mouse */
 }
 
 .Links::after {
   content: '';
   position: absolute;
-  bottom: -10px; /* Ajusta o espaço vertical entre a linha e o link */
-  left: 50%; /* Centraliza horizontalmente */
-  width: 0; /* Inicialmente a faixa tem largura 0 */
-  height: 3px; /* Ajusta a altura da linha */
-  background: var(--branco); /* Cor da animação */
+  bottom: -10px;
+  /* Ajusta o espaço vertical entre a linha e o link */
+  left: 50%;
+  /* Centraliza horizontalmente */
+  width: 0;
+  /* Inicialmente a faixa tem largura 0 */
+  height: 3px;
+  /* Ajusta a altura da linha */
+  background: var(--branco);
+  /* Cor da animação */
   border-radius: 10px;
-  transition: width 0.5s ease, left 0.5s ease; /* Transições para largura e posição */
-  transform: translateX(-50%); /* Centraliza a faixa em relação ao texto */
+  transition: width 0.5s ease, left 0.5s ease;
+  /* Transições para largura e posição */
+  transform: translateX(-50%);
+  /* Centraliza a faixa em relação ao texto */
 }
 
 .Links:hover::after {
-  width: 110%; /* Expande a faixa ao passar o mouse */
-  left: 50%; /* Garante que a faixa fique centralizada ao expandir */
-  transform: translateX(-50%); /* Mantém a centralização ao expandir */
+  width: 110%;
+  /* Expande a faixa ao passar o mouse */
+  left: 50%;
+  /* Garante que a faixa fique centralizada ao expandir */
+  transform: translateX(-50%);
+  /* Mantém a centralização ao expandir */
 }
 
 
@@ -178,31 +201,415 @@
 }
 
 /* Estilo para artigos */
-article {
-  width: 288px;
+.footerArticle {
+  width: 320px;
   text-align: left;
   height: 320px;
   padding-top: 25px;
+
+  margin: 1.4%;
 }
 
 /* Estilo para o container de ícones */
 .iconContainer {
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: center;
-  margin-right: 25px; /* Espaçamento entre o ícone e o texto */
+  margin-right: 25px;
+  /* Espaçamento entre o ícone e o texto */
   height: 22px;
   width: 22px;
 }
 
 .icon {
-  object-fit: cover;
+  height: 40px;
+  width: 40px;
 }
 
 /* Ajuste para o container de navegação */
 .navContainer {
   display: flex;
-  flex-direction: row; /* Alinha os itens lado a lado */
+  flex-direction: row;
+  /* Alinha os itens lado a lado */
   height: 70%;
-  align-items: flex-start; /* Alinha verticalmente o conteúdo */
+  align-items: flex-start;
+  /* Alinha verticalmente o conteúdo */
+
 }
+
+
+@media (max-width:1350px) {
+  .footerArticle {
+    margin: 0;
+  }
+
+  .footerContainer {
+
+    gap: 15px;
+  }
+
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    /* Alinha o logo verticalmente ao centro */
+    margin-right: -15px;
+    margin-left: -45px;
+    /* Ajusta o espaçamento à direita */
+  }
+
+  .logo {
+    max-height: 180px;
+    /* Ajusta a altura do logo se necessário */
+  }
+
+  .icon {
+    height: 28px;
+    width: 28px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .footerContainer {
+    gap: 10px;
+  }
+
+  .footer {
+    padding-top: 20px;
+    border-radius: 50px 50px 0px 0px;
+
+  }
+
+  .logo {
+    width: 190px;
+  }
+
+  .logoContainer {
+    margin-right: 30px;
+    margin-top: -8px;
+  }
+
+  .footerArticle {
+    margin: 0 15px 0 15px;
+    width: 330px;
+  }
+
+  .navUl {
+    gap: 55px;
+
+    height: 230px;
+    width: auto;
+  }
+
+  .Links {
+    font-size: 0.95rem;
+  }
+
+  .navTitle {
+    font-size: 0.85rem;
+  }
+
+  .navContainer {
+    width: auto;
+  }
+
+
+}
+
+@media (max-width: 1120px) {
+
+  .logo {
+    width: 240px;
+    height: auto;
+  }
+
+  .logoContainer {
+    margin-right: -20px;
+  }
+
+  .footerContainer {
+    margin-left: 15%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    /* Duas linhas */
+    justify-content: end;
+    /* Alinha as colunas à direita */
+  }
+
+  /* Coloque os itens específicos nas posições corretas */
+  .footerContainer> :nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .footerContainer> :nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .footerContainer> :nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .footerContainer> :nth-child(4) {
+    grid-column: 2;
+    /* Primeira coluna da segunda linha */
+    grid-row: 2;
+  }
+
+  .footerContainer> :nth-child(5) {
+    grid-column: 3;
+    /* Segunda coluna da segunda linha */
+    grid-row: 2;
+  }
+
+  .footerContainer {
+    left: 5%;
+  }
+
+  .navTitle {
+    font-size: 1.1rem;
+    line-height: 27px;
+    width: 100%;
+  }
+
+  .Links {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1080px) {
+
+  .navTitle {
+    font-size: 1.1rem;
+    line-height: 27px;
+    width: auto;
+  }
+
+  .Links {
+    font-size: 1.1rem;
+  }
+
+  .footerContainer {
+    margin-right: -150px;
+    left: 20%;
+    width: 80%;
+    align-items: center;
+    padding: 0;
+  }
+
+  .logoContainer {
+    margin-right: -20px;
+  }
+
+}
+
+@media (max-width:1020px) {
+  .logoContainer {
+    width: 120px;
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 998px) {
+  .footerContainer {
+    width: 80%;
+    left: 33%;
+  }
+
+  .logoContainer {
+    margin-top: -220px;
+    width: 150px;
+    margin-right: 15px;
+
+  }
+
+  .logo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  .logoContainer {
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 938px) {
+
+
+  .logo {
+    width: 100%;
+    height: auto;
+    margin-right: -50px;
+  }
+}
+
+
+@media (max-width: 908px) {
+
+  .footerContainer {
+    margin-left: 30px;
+    width: 90%;
+  }
+
+  .Links {
+    font-size: 0.9rem;
+  }
+
+  .navTitle {
+    width: auto;
+    font-size: 0.88rem;
+  }
+
+  .iconContainer {
+    width: 25px;
+    height: 25px;
+  }
+
+  .icon {
+    height: 25px;
+    width: 25px;
+  }
+
+  .footerArticle {
+    margin: -8px;
+
+  }
+}
+
+
+
+
+@media (max-width: 884px) {
+
+  .navTitle {
+    font-size: 0.82rem;
+  }
+
+  .footerArticle {
+    width: auto;
+    margin-left: -80px;
+    margin-right: 90px;
+  }
+
+  .footerContainer {
+
+    left: 10%;
+  }
+
+  .logoContainer {
+    margin-right: -20px;
+  }
+}
+
+@media (max-width: 734px) {
+  .logoContainer {
+
+    margin-right: 70px;
+  }
+
+
+}
+
+@media (max-width:700px) {
+
+  .logoContainer {
+    width: 123px;
+  }
+
+}
+
+@media (max-width: 670px) {
+  .footer {
+    height: auto;
+
+    padding-top: 65px;
+
+    border-radius: 55px 55px 0 0;
+  }
+
+  .footerContainer {
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1%;
+    margin-left: 15px;
+  }
+
+  .logoContainer {
+    width: 50%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    padding: 0;
+    margin-top: 1%;
+
+  }
+
+  .logo {
+    width: 330px;
+    height: auto;
+    margin: 0;
+  }
+
+  .Links {
+    font-size: 1.1rem;
+
+  }
+
+  .navTitle {
+    width: auto;
+    font-size: 1rem;
+
+  }
+
+  .iconContainer {
+    width: 35px;
+    height: 35px;
+  }
+
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+
+  .footerArticle {
+    border-bottom: solid 5px var(--branco);
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 580px) {
+  .footerContainer {
+    padding-left: 70px;
+  }
+}
+
+@media (max-width: 493px) {
+ 
+
+  .navTitle
+  {
+    font-size: 1rem;
+  }
+
+  .Links
+  {
+    font-size: 0.94rem;
+  }
+
+  .footerArticle
+  {
+    margin-left: -10px;
+    margin-bottom: 35px;
+  }
+}
+

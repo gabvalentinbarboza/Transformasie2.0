@@ -18,7 +18,9 @@ function Footer() {
         <div className={Styles.logoContainer}>
           <img src={logo} alt="Transformasie Logo" className={Styles.logo} />
         </div>
-        <article>
+
+
+        <article className={Styles.footerArticle}>
           <div className={Styles.titleContainer}>
             <h1 className={Styles.navTitle}>PROSPERE COM A NOSSA AJUDA</h1>
           </div>
@@ -41,13 +43,13 @@ function Footer() {
             </nav>
           </div>
         </article>
-        <article>
+        <article className={Styles.footerArticle}>
           <div className={Styles.titleContainer}>
             <h1 className={Styles.navTitle}>CONHEÇA-NOS</h1>
           </div>
 
           <div className={Styles.navContainer}>
-          {/* CONHEÇA-NOS */}
+            {/* CONHEÇA-NOS */}
             <nav className={Styles.nav}>
               <ul className={Styles.navUl}>
                 <li className={Styles.navItem}>
@@ -61,7 +63,7 @@ function Footer() {
           </div>
         </article>
 
-        <article>
+        <article className={Styles.footerArticle}>
           <div className={Styles.titleContainer}>
             <h1 className={Styles.navTitle}>FALE CONOSCO</h1>
           </div>
@@ -87,7 +89,7 @@ function Footer() {
           </div>
         </article>
 
-        <article>
+        <article className={Styles.footerArticle}>
           <div className={Styles.titleContainer}>
             <h1 className={Styles.navTitle}>SIGA-NOS</h1>
           </div>

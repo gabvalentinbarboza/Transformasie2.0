@@ -19,13 +19,15 @@ function MissaoVisaoValores() {
 
                 <div className={Styles.pContainer}>
                     <p className={Styles.paragrafo}>Transformar a vida das<br />
-                        pessoas através da Educação Financeira,<br />
-                        ampliando especialmente o<br />
-                        conhecimento sobre<br />
-                        planejamento com o<br />
+                        pessoas através da Educação Financeira,
+                        ampliando especialmente o
+                        conhecimento sobre
+                        planejamento com o
                         objetivo de realizar sonhos</p>
                 </div>
             </article>
+
+
 
             <article className={Styles.VisaoContainer}>
                 <div className={Styles.Circulo}>
@@ -37,9 +39,9 @@ function MissaoVisaoValores() {
                 </div>
 
                 <div className={Styles.pContainer}>
-                    <p className={Styles.paragrafo}>Ser reconhecida como uma consultoria diversa,<br />
-                        inclusiva e participativa e que promova a<br />
-                        disseminação do conhecimento para a sociedade,<br />
+                    <p className={Styles.paragrafo}>Ser reconhecida como uma consultoria diversa,
+                        inclusiva e participativa e que promova a
+                        disseminação do conhecimento para a sociedade,
                         com o objetivo de torná-la mais equânime.</p>
                 </div>
             </article>
@@ -55,9 +57,9 @@ function MissaoVisaoValores() {
 
                 <div className={Styles.pContainer}>
                     <p className={Styles.paragrafo}>
-                        Diversidade & Inclusão<br />
-                        Paixão pelo que faz Ética e<br />
-                        Transparência Confiança Integridade Respeito
+                        Diversidade & Inclusão,<br />
+                        Paixão pelo que faz Ética e
+                        Transparência Confiança Integridade Respeito.
                     </p>
                 </div>
             </article>

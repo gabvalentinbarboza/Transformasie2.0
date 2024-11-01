@@ -6,8 +6,10 @@ function SobreNos() {
     return (
         <>
             <section className={Styles.SobreNosContainer}>
+
+                
                 <article className={Styles.FotoFundoContainer}>
-                    <img src={Fundo} className={Styles.FotoFundo}/>
+                   
                 </article>
 
                 <article className={Styles.TextoContainer}>

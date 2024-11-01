@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 100px 50px;
-    height: 856px;
+    height: auto;
     background-size: cover;
     background-position: center;
 
@@ -45,12 +45,12 @@
     margin-right: 280px;
     width: 50%;
     font-family: var(--font-sora-semibold);
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--branco);
     margin-top: 120px;
     text-decoration: none;
     padding: 0;
-    border-radius: 25px;
+    border-radius: 45px;
     background-color: var(--amarelo);
     height: 70px;
     display: flex;
@@ -62,7 +62,7 @@
 .saibaMais:hover {
     transition: 0.3s ease;
     background-color: var(--verde);
-    }
+}
 
 /* Seção da CEO */
 .ceoContainer {
@@ -89,7 +89,8 @@
     margin-top: 20px;
 }
 
-.linkedinButton, .whatsappButton {
+.linkedinButton,
+.whatsappButton {
     font-family: var(--font-poppins-bold);
     font-size: 1.3rem;
     color: var(--branco);
@@ -103,7 +104,8 @@
     width: 200px;
 }
 
-.linkedinButton:hover, .whatsappButton:hover {
+.linkedinButton:hover,
+.whatsappButton:hover {
     transition: 0.3s ease;
     background-color: var(--verde);
 }
@@ -124,7 +126,7 @@
 }
 
 .linksContainer {
-    width: 50%;
+    width: 55%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -133,8 +135,983 @@
 }
 
 .Container {
-    width: auto;
+    width: 100%;
     height: 1000px;
 
 
+}
+
+@media (max-width: 1295px) {
+
+    .Container {
+        height: 910px;
+    }
+
+    .quemSomosContainer {
+
+        width: 55%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 43px;
+        margin-right: 50px;
+    }
+
+    .saibaMais {
+        width: 270px;
+    }
+
+    .ceoContainer {
+        margin-right: -55px;
+
+
+    }
+
+
+
+
+    .linksContainer {
+        margin-left: -125px;
+
+        padding: 0;
+
+        width: 40%;
+
+    }
+}
+
+@media (max-width: 1275px) {
+    .quemSomosContainer {
+        margin-right: 15px;
+    }
+
+    .linksContainer {
+        margin-left: -95px;
+
+        padding: 0;
+
+        width: 30%;
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 1222px) {
+    .linksContainer {
+        padding-left: 0;
+        width: 40%;
+        margin-left: 80px;
+    }
+
+
+}
+
+@media (max-width: 1170px) {
+
+    .Container {
+        margin-top: 100px;
+        height: 730px;
+    }
+
+    /* Seção Quem Somos */
+    .quemSomosContainer {
+        top: 310px;
+
+        margin-bottom: 21px;
+        margin-top: -45px;
+
+    }
+
+    .ceoContainer {
+        margin-right: -15px;
+        margin-top: 75px;
+
+    }
+
+    .ceoImage {
+        width: 250px;
+        height: auto;
+        right: 0;
+
+    }
+
+    .quemSomosTitle {
+        font-family: var(--font-sora-bold);
+        font-size: 3rem;
+        color: var(--branco);
+    }
+
+    .description {
+        font-family: var(--font-sora-regular);
+        font-size: 1rem;
+        line-height: 35px;
+
+        margin-top: 20px;
+        width: 90%;
+        margin-bottom: -100px;
+    }
+
+    .saibaMais {
+        font-size: 1.5rem;
+    }
+
+    .linksContainer {
+        width: 40%;
+        height: 80%;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        margin-top: -100px;
+
+        right: 120px;
+        margin-right: -10px;
+
+
+    }
+
+    .ceoPhrase {
+        font-size: 1.3rem;
+    }
+
+    .ceoContainer {
+
+        padding: 0;
+        width: 50%;
+        right: 0;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .ceoContainer {
+        padding: 0;
+
+        width: 90%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .quemSomosTitle {
+        font-size: 2.4rem;
+    }
+
+    .quemSomosContainer {
+        gap: 20px;
+    }
+
+    .saibaMais {
+        width: 220px;
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 1026px) {
+
+
+    .sectionContainer {
+        display: flex;
+        flex-direction: column-reverse;
+
+        top: -400px;
+        align-items: flex-start;
+        gap: 150px;
+
+    }
+
+    .ceoContainer {
+        margin-top: -110px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 150px;
+        justify-content: space-between;
+    }
+
+
+    .ceoImage {
+        margin-left: 350px;
+        width: 250px;
+    }
+
+    .linksContainer {
+        width: 90%;
+        top: 250px;
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 350px;
+
+        padding: 0;
+
+    }
+
+
+
+    .socialButtons {
+        width: 450px;
+        position: absolute;
+        margin-right: 25px;
+        display: flex;
+        align-items: flex-start;
+
+        left: 50px;
+        height: 450px;
+        gap: 25px;
+        margin-top: 45px;
+    }
+
+
+    .linkedinButton,
+    .whatsappButton {
+        font-family: var(--font-poppins-bold);
+        font-size: 1.3rem;
+        color: var(--branco);
+        background-color: var(--amarelo);
+        padding: 10px 20px;
+        border-radius: 43px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 230px;
+        height: 85px;
+        padding-bottom: 10px;
+    }
+
+    .icon {
+        height: 35px;
+        width: 35px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .ceoPhrase {
+        font-size: 1.75rem;
+    }
+
+    .ceoImage {
+        position: relative;
+        margin-top: 45px;
+        width: 550px;
+        height: auto;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    .Container {
+        margin-bottom: 1500px;
+        height: 800px;
+    }
+
+
+
+    .quemSomosContainer {
+        border-radius: 8%;
+        width: 100%;
+        height: 1200px;
+        display: flex;
+        margin-bottom: -20px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        margin-right: 30px;
+        margin-top: 50px;
+        margin-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 45px;
+        background: url(../../assets/QuemSomosMobileImg.png) no-repeat center center/cover;
+
+    }
+
+    .quemSomosTitle {
+
+        margin-left: 50px;
+        margin-top: 8%;
+        font-size: 5.2rem;
+    }
+
+    .description {
+        height: auto;
+        font-size: 2.3rem;
+        margin-top: 280px;
+        line-height: 45px;
+        width: 100%;
+        padding: 8%;
+        background-color: rgba(4, 44, 6, 0.3);
+    }
+
+    .saibaMais {
+        width: 35%;
+        height: 9%;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        border-radius: 55px;
+        font-size: 2.4rem;
+    }
+
+}
+
+/* Ajustes para telas abaixo de 996px */
+@media (max-width: 996px) {
+    .Container {
+        margin-top: 115px;
+        height: 615px;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .socialButtons {
+        top: 425px;
+    }
+
+    .ceoImage {
+
+        width: 350px;
+        right: 18px;
+        position: relative;
+    }
+
+    .ceoPhrase {
+        font-size: 1.4rem;
+        line-height: 45px;
+        width: 85%;
+    }
+
+    .quemSomosContainer {
+        margin-top: -145px;
+        border-radius: 65px;
+    }
+
+    .description {
+        font-size: 1.9rem;
+    }
+
+    .quemSomosTitle {
+        margin-top: 4%;
+        font-size: 4.5rem;
+
+    }
+
+
+
+
+}
+
+@media (max-width: 960px) {
+    .saibaMais {
+        font-size: 2rem;
+    }
+
+    .description {
+        margin-top: 185px;
+        font-size: 1.65rem;
+    }
+}
+
+@media (max-width: 880px) {
+
+    .Container {
+        margin-top: 115px;
+        height: 615px;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .socialButtons {
+        top: 425px;
+        height: 400px;
+    }
+
+    .ceoImage {
+
+        width: 350px;
+        
+        position: relative;
+        right: 85px;
+    
+    }
+
+    .ceoPhrase {
+        font-size: 1.4rem;
+        line-height: 45px;
+        width: 85%;
+     
+    }
+
+    .quemSomosContainer {
+        margin-top: -145px;
+        border-radius: 65px;
+        height: 1100px;
+    }
+
+
+
+    .quemSomosTitle {
+        margin-left: 39px;
+        margin-top: 5%;
+        font-size: 3.5rem;
+
+
+    }
+
+    .linkedinButton,
+    .whatsappButton {
+        font-family: var(--font-poppins-bold);
+        font-size: 1.31rem;
+        width: 210px;
+        height: 75px;
+
+    }
+
+    .description {
+        margin-top: 310px;
+    }
+
+}
+
+@media (max-width: 856px) 
+
+{
+    .ceoContainer
+    {
+        margin-right: 35px;
+    }
+}
+
+@media (max-width: 832px) 
+
+{
+    .ceoContainer
+    {
+        margin-left: -12px;
+    }
+}
+
+@media (max-width: 820px) {
+    .ceoContainer
+    {
+        margin-right: 32px;
+    }
+    .ceoImage {
+        width: 280px;
+    }
+
+    .quemSomosContainer {
+        margin-top: -65px;
+        height: auto;
+    }
+
+    .saibaMais {
+        font-size: 1.7rem;
+        height: auto;
+        padding: 15px;
+        margin-bottom: 30px;
+
+    }
+
+    .description {
+        margin-top: 305px;
+        font-size: 1.5rem;
+        margin-bottom: -130px;
+        padding: 10%;
+    }
+
+    .quemSomosTitle {
+        margin-top: 70%;
+        font-size: 4.1rem;
+        margin-bottom: -310px;
+
+    }
+
+
+
+
+}
+
+
+@media (max-width: 800px) {
+    .quemSomosContainer {
+        height: 800px;
+        margin-bottom: 1000px;
+    }
+
+    .quemSomosTitle {
+        margin-top: 43%;
+        font-size: 3.2rem;
+        margin-bottom: -380px;
+    }
+
+    .description {
+        padding: 7%;
+        font-size: 1.3rem;
+        margin-bottom: -190px;
+    }
+
+    .saibaMais {
+        width: 45%;
+        height: auto;
+        margin-bottom: -10px;
+
+    }
+
+    .Container {
+        margin-bottom: 1150px;
+    }
+}
+
+@media(max-width: 785px) {
+
+    .Container {
+       max-width: 100%;
+    }
+
+    .socialButtons {
+        gap: 25px;
+        height: auto;
+        margin-right: -25px;
+    }
+
+    .linkedinButton,
+    .whatsappButton {
+        margin-bottom: 10px;
+        padding: 0;
+        width: 80px;
+        height: 80px;
+        color: none;
+        font-size: 0px;
+    }
+
+    .icon {
+        margin-left: 16px;
+
+        width: 60%;
+        height: 60%;
+    }
+
+    .ceoImage {
+        margin: 0;
+        margin-top: 45px;
+        width: 325px;
+       left: 270px;
+    }
+
+   
+
+    .ceoContainer {
+
+        width: 75%;
+
+        margin-right: 115px;
+        display: flex;
+        justify-content: space-between;
+        right: 120px;
+    }
+
+
+
+ 
+
+    .linksContainer {
+        width: 70%;
+    }
+
+    .ceoPhrase {
+        line-height: 35px;
+        width: 40%;
+        font-size: 1.2rem;
+        margin-top: -245px;
+        margin-left: 100px;
+    
+    }
+
+    .saibaMais {
+        margin-bottom: 23px;
+        margin-top: 130px;
+    }
+
+    .description {
+        padding: 5%;
+        font-size: 1.4rem;
+        line-height: 36px;
+    }
+
+    .quemSomosTitle {
+        margin-top: 48%;
+    }
+}
+
+@media (max-width: 730px) {
+    .ceoPhrase {
+        width: 50%;
+        font-size: 1.2rem;
+        line-height: 30px;
+        margin-left: 105px;
+        margin-top: -235px;
+    }
+
+    .Container {
+        height: 430px;
+        margin-bottom: 1180px;
+    }
+
+    .quemSomosTitle {
+        margin-top: 54%;
+        margin-bottom: -320px;
+    }
+
+    .quemSomosContainer {
+        margin-top: -150px;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .saibaMais {
+        margin-bottom: 10px;
+        margin-top: 190px;
+    }
+
+    .ceoImage
+    {
+        top: 20px;
+        left: 275px;
+        width: 240px;
+    }
+}
+
+@media (max-width: 705px) {
+    .Container {
+        margin-top: 450px;
+        height: 420px;
+        margin-bottom: 1435px;
+    }
+
+    .quemSomosContainer {
+        margin-top: -145px;
+        margin-bottom: -25px;
+        margin-right: 0;
+    }
+
+ 
+}
+
+@media (max-width: 680px) {
+    .Container {
+        height: 590px;
+        margin-bottom: 1050px;
+    }
+
+    .quemSomosContainer {
+        margin-top: -20px;
+    }
+
+    .ceoPhrase {
+
+        width: 100%;
+        margin-top: 65px;
+        margin-left: 0;
+        font-size: 1.55rem;
+        line-height: 40px;
+        
+    }
+
+    .quemSomosTitle {
+        font-size: 2.8rem;
+        margin-left: 33px;
+    }
+
+    .ceoImage {
+        margin-top: 35px;
+        width: 255px;
+        right: 240px;
+        margin-left: -75px;
+    }
+
+    .linkedinButton,
+    .whatsappButton {
+        width: 200px;
+
+        height: 80px;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        font-size: 2rem;
+        color: var(--branco);
+    }
+}
+
+
+@media (max-width: 649px) {
+
+    .ceoImage {
+        right: 245px;
+    }
+
+    .ceoPhrase {
+        font-size: 1.5rem;
+        width: 110%;
+
+    }
+
+
+    .description {
+        margin-top: 270px;
+        padding: 5% 10% 5% 10%;
+        font-size: 1.1rem;
+        line-height: 30px;
+    }
+
+    .quemSomosTitle {
+        font-size: 1.9rem;
+        margin-bottom: -265px;
+    }
+
+    .quemSomosContainer {
+        height: 700px;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .description {
+        margin-top: 250px;
+        margin-bottom: -175px;
+    }
+
+    .saibaMais {
+        width: 250px;
+        height: auto;
+        padding: 20px 30px 20px 30px;
+        margin-top: 170px;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .description {
+        font-size: 0.94rem;
+        line-height: 25px;
+    }
+
+    .quemSomosTitle {
+        margin-top: 320px;
+        margin-bottom: -265px;
+    }
+
+    .quemSomosContainer {
+        width: 100%;
+        margin-right: 20px;
+        margin-left: -10px;
+
+    }
+
+    .ceoImage {
+        top: 30px;
+        right: 250px;
+        width: 210px;
+        margin-bottom: 80px;
+    }
+
+    .ceoPhrase {
+        font-size: 1.3rem;
+        line-height: 37px;
+        width: 95%;
+    }
+}
+
+@media (max-width: 558px) {
+
+    .quemSomosContainer {
+        margin-top: -80px;
+        width: 110%;
+        margin-left: -15px;
+    }
+
+    .whatsappButton,
+    .linkedinButton {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+    }
+
+    .icon {
+        color: var(--branco);
+        font-size: 2rem;
+        margin-right: 10px;
+        width: 60%;
+        height: 60%;
+
+    }
+
+    .ceoPhrase {
+
+        margin-top: 5px;
+    }
+
+    .ceoImage {
+        width: 230px;
+        right: 150px;
+        top: 20px;
+        margin-right: 320px;
+        margin-left: -80px;
+    }
+
+    .ceoContainer
+    {
+        width: 100%;
+        left: -23px;
+    }
+}
+
+@media (max-width: 517px) {
+
+    .sectionContainer
+    {
+        display: flex;
+        align-items: center;
+    }
+    .ceoImage {
+
+        top: 20px;
+    width: 170px;
+            margin-left: -80px;
+            margin-right: 350px;
+        right: 335px;
+    }
+
+    .ceoPhrase {
+        font-size: 1.1rem;
+        width: 75%;
+    }
+
+    .quemSomosContainer {
+        width: 100%;
+        margin-left: -29px;
+    }
+.socialButtons
+{
+    width: 80%;
+ 
+    left: 30px;
+}
+
+.linkedinButton,.whatsappButton
+{
+    width: 70px;
+    height: 70px;
+}
+
+.icon
+{
+    margin-left: 11.2px;
+    width: 35px;
+    height: 35px;
+}
+}
+
+@media (max-width: 490px) {
+
+    .Container {
+        margin-top: 50px;
+        height: 640px;
+        margin-bottom: 995px;
+        padding-top: 90px;
+    }
+}
+
+@media (max-width: 485px) {
+    .ceoImage {
+        right: 350px;
+        width: 210px;
+        margin-left: -170px;
+    }
+
+    .linkedinButton,
+    .whatsappButton {
+        width: 70px;
+        height: 70px;
+    }
+
+    .icon {
+        width: 35px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .ceoPhrase {
+        margin-top: 0px;
+        width: 70%;
+    }
+
+    .quemSomosContainer {
+        margin-top: 10px;
+        width: 120%;
+        margin-left: 18px;
+        height: 600px;
+    }
+
+    .quemSomosTitle {
+        margin-top: 250px;
+        margin-bottom: -380px;
+    }
+
+    .saibaMais {
+        width: 230px;
+        height: 60px;
+        margin-bottom: -10px;
+        margin-top: 50px;
+        font-size: 1.3rem;
+    }
+
+    .description {
+        height: 323;
+        font-size: 1rem;
+        padding: 5%;
+    }
+}
+
+@media (max-width: 460px) {
+    .ceoImage {
+        right: 360px;
+    }
+
+    .ceoPhrase {
+        margin-left: -10px;
+    }
+
+    .linkedinButton,
+    .whatsappButton {
+        margin-left: -20px;
+    }
+
+    .quemSomosTitle {
+        margin-top: 60px;
+        font-size: 2.5rem;
+    }
+
+    .description {
+        margin-top: 385px;
+    }
+
+    .quemSomosContainer {
+        height: 650px;
+        width: 125%;
+    }
 }

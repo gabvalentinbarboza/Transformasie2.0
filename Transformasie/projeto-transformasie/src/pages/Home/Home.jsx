@@ -10,13 +10,22 @@ function Home() {
     <>
       <Header />
       <main>
-        <QuemSomos />
-        <NossosServicos />
-        <PopUp title="Começe a sua jornada!"/>
-      </main>
-      <Footer />
+      <QuemSomos />
+      <NossosServicos />
+      <PopUp title="Começe a sua jornada!" />
+
+        </main>
+        <Footer />
     </>
   );
 }
 
 export default Home;
+
+/*
+
+    
+        
+         
+
+*/

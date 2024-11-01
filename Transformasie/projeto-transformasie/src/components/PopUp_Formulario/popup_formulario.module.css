@@ -1,172 +1,408 @@
-@import url('/fonts/fonts.css');
-
-/* Definindo variáveis de cores */
-:root {
-    --branco: #FFFFFF;
-    --preto: #000000;
-    --bege: #FDE4A1;
-    --cinza-claro: #EDEDED;
-    --vermelho-bordo: #9E1010;
-    --amarelo: #FFA800;
-    --vermelho: #FE4A45;
-    --verde: #248F61;
-    --verde-musgo: #073B38;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-/* Tipografia */
-:root {
-    --font-poppins-bold: 'Poppins-Bold', sans-serif;
-    --font-poppins-regular: 'Poppins-Regular', sans-serif;
-    --font-poppins-semibold: 'Poppins-SemiBold', sans-serif;
-    --font-sora-bold: 'Sora-Bold', sans-serif;
-    --font-sora-regular: 'Sora-Regular', sans-serif;
-    --font-sora-semibold: 'Sora-SemiBold', sans-serif;
-}
-
-/* Container Principal */
 .Container {
-    position: relative; /* Adicione esta linha para tornar a .Container o ponto de referência */
     width: 100%;
-    height: 900px;
-    margin-top: -450px; /* Certifique-se de que este valor seja necessário */
+    margin-top: -500px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-   
 }
+
 
 .TitleContainer {
-    position: absolute; /* Posiciona em relação à div pai */
-    top: 0; /* Cola no topo da div pai */
-    left: 0; /* Alinha à esquerda */
-    text-align: left;
+    width: auto;
+    height: 110px;
     display: flex;
-    width: 100%;
-    height: 150px;
-
-    
-}
-
-.Title {
-    font-family: var(--font-sora-regular);
-    font-size: 3.5rem;
-    color: var(--verde-musgo);
-    padding-left: 50px;
-    margin-top: -50px;
-    margin-bottom: 60px;
-  
-}
-
-/* Container do PopUp */
-
-.PopUpContainer {
-   
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 750px;
-}
-
-.PopUp {
-    display: flex;
-    
-    width: 910px;
-    height: 675px;
-    border-radius: 35px;
-    overflow: hidden;
-}
-
-/* Poster da Foto */
-.PosterContainer {
-    flex: 1;
-    display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.PosterImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 35px 0 0 35px;
-}
-
-/* Container da Proposta */
-.PropostaContainer {
-    flex: 1;
-    background-color: var(--vermelho);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px;
-    border-radius: 0 35px 35px 0;
-   
-}
-
-.PropostaTitle {
-    font-family: var(--font-poppins-bold);
-    font-size: 28px;
-    color: var(--branco);
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.TextDireita {
+    font-size: 2.5rem;
     font-family: var(--font-poppins-regular);
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--branco);
-    text-align: center;
     margin-bottom: 40px;
 }
 
-.ButtonProposta {
-    width: 100%;
-    padding: 15px 0;
-    background-color: var(--amarelo);
-    border: none;
-    border-radius: 50px;
-    font-family: var(--font-poppins-semibold);
-    font-size: 18px;
-    color: var(--branco);
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease; /* Transição suave ao mudar a cor */
+.PopUp {
+    width: 910px;
+    height: 675px;
+    display: flex;
+    flex-direction: row;
 }
 
-.ButtonProposta:hover {
-    background-color: var(--amarelo);
-    opacity: 0.9;
+.PosterContainer {
+    width: 50%;
+    background-color: rgb(144, 104, 219);
+    background: url(../../assets/Foto_PopUp.png);
+    border-radius: 11.5% 0% 0% 11.5%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .TextoSobreImagem {
-    position: absolute; /* Garante que o texto fique sobre a imagem */
-    bottom: 12%; /* Posiciona o texto do meio para baixo */
-    left: 55%; /* Centraliza o texto horizontalmente */
-    transform: translateX(-50%); /* Ajusta a centralização */
-    color: var(--branco); /* Cor do texto */
-    font-family: var(--font-sora-semibold);
-    font-size: 2.3rem;
-    text-align: left; /* Alinha o texto ao centro */
-    padding: 107px; /* Pequeno espaçamento interno */
-    margin-top: 80px;
-    width: 80%; /* Controla a largura do texto */
-    line-height: 50px;
- 
+    margin-top: 240px;
+    font-size: 2rem;
+    color: var(--branco);
+    font-family: var(--font-poppins-regular);
 }
 
-@media (max-width: 768px) {
+
+.PropostaContainer {
+    width: 50%;
+    background-color: var(--vermelho);
+    border-radius: 0% 11.5% 11.5% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.PropostaTitle {
+    font-size: 1.7rem;
+    color: var(--branco);
+}
+
+.TextDireita {
+    font-size: 1.7rem;
+    color: var(--branco);
+    width: 70%;
+}
+
+.ButtonProposta {
+    width: 80%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--amarelo);
+    text-decoration: none;
+    color: var(--branco);
+    border-radius: 50px;
+    transition: 0.8s;
+    font-size: 1.5rem;
+}
+
+.ButtonProposta:hover {
+    background-color: var(--verde);
+}
+
+@media (max-width: 1300px) {
+    .Container {
+        margin-top: -700px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .PopUp {
+
+        width: 810px;
+        height: 575px;
+    }
+
+    .ButtonProposta {
+        font-size: 1.2rem;
+        width: 70%;
+    }
+
+    .TextoSobreImagem {
+        line-height: 38px;
+        font-size: 1.8rem;
+        font-family: var(--font-poppins-semibold);
+    }
+
+    .TextDireita {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1020px) {
+
+    .Container {
+        margin-top: -890px;
+    }
+}
+
+
+@media (max-width: 900px) {
     .Title {
-        font-size: 2.5rem; /* Reduz o tamanho da fonte em telas menores */
+        font-size: 3rem;
+    }
+
+    .PropostaTitle {
+        font-size: 1.3rem;
     }
 
     .PopUp {
-        width: 100%; /* Faz o PopUp ocupar toda a largura da tela */
-        height: auto; /* Permite altura automática */
+
+        width: 710px;
+        height: 475px;
     }
 
-    .PosterImage {
-        height: 50%; /* Ajusta a altura da imagem em telas pequenas */
+    .ButtonProposta {
+        font-size: 1.rem;
+        width: 65%;
+        height: 55px;
+    }
+
+    .TextoSobreImagem {
+        line-height: 34px;
+        font-size: 1.4rem;
+        font-family: var(--font-poppins-semibold);
+        margin-bottom: 25px;
+    }
+
+    .TextDireita {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .Container {
+        margin-top: -1050px;
+    }
+
+    .PopUp {
+
+        width: 610px;
+        height: 375px;
+    }
+
+
+
+
+    .ButtonProposta {
+        width: 65%;
+        height: 40px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .TextoSobreImagem {
+        font-size: 1.12rem;
+        margin-bottom: 85px;
+        line-height: 30px;
+        margin-right: 50px;
+    }
+
+    .TextDireita {
+        font-size: 1.2rem;
+        line-height: 32px;
+    }
+
+    .PropostaTitle {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .Container {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 680px) {
+
+
+    .PopUp {
+
+        width: 530px;
+        height: 400px;
+    }
+
+
+
+
+    .ButtonProposta {
+        width: 100%;
+        height: 80px;
+        font-size: 1rem;
+        margin-bottom: -20px;
+        border-radius: 0 0 35px 0;
+    }
+
+    .TextoSobreImagem {
+        font-size: 1rem;
+        margin-bottom: 85px;
+        line-height: 30px;
+        margin-right: 20px;
+    }
+
+    .TextDireita {
+        font-size: 1rem;
+        line-height: 28px;
+    }
+
+    .PropostaTitle {
+        font-size: 1.1rem;
+    }
+
+    .Title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 580px) {
+
+
+    .PopUp {
+
+        width: 490px;
+        height: 370px;
+    }
+
+
+
+
+    .ButtonProposta {
+        width: 100%;
+        height: 54px;
+        font-size: 1rem;
+        margin-bottom: -20px;
+        border-radius: 0 0 20px 0;
+    }
+
+    .TextoSobreImagem {
+        font-size: 1rem;
+        margin-bottom: 105px;
+        line-height: 30px;
+        margin-right: 20px;
+    }
+
+    .TextDireita {
+        font-size: 0.92rem;
+        line-height: 28px;
+    }
+
+    .PropostaTitle {
+        font-size: 1rem;
+    }
+
+    .Title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 516px) 
+
+{
+
+
+    .PopUp{
+
+        width: 95%;
+        height: 370px;
+    }
+
+
+
+
+    .ButtonProposta
+    
+    {
+        width: 100%;
+        height: 54px;
+        font-size: 1rem;
+margin-bottom: -20px;
+border-radius: 0 0 20px 0;
+    }
+
+    .TextoSobreImagem
+    
+    {
+        font-size: 1rem;
+margin-bottom: 105px;
+line-height: 30px;
+margin-right: 20px;
+    }
+
+    .TextDireita
+    {
+        font-size:0.92rem;
+        line-height: 28px;
+    }
+
+    .PropostaTitle
+    
+    {
+        font-size: 1rem;
+    }
+    
+    .Title
+    {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 490px)  
+{
+
+    
+
+    .PopUp{
+
+        width: 95%;
+        height: 370px;
+    }
+
+
+
+
+    .ButtonProposta
+    
+    {
+        width: 100%;
+        height: 54px;
+        font-size: 1rem;
+margin-bottom: -28px;
+border-radius: 0 0 26px 0;
+    }
+
+    .TextoSobreImagem
+    
+    {
+        font-size: 1rem;
+margin-bottom: 105px;
+line-height: 30px;
+margin-right: 20px;
+    }
+
+    .TextDireita
+    {
+        font-size:0.92rem;
+        line-height: 22px;
+    }
+
+    .PropostaTitle
+    
+    {
+        font-size: 0.9rem;
+    }
+    
+    .Title
+    {
+        font-size: 1.5rem;
+    }
+
+  
+
+}
+
+@media (max-width: 470px) 
+
+{
+    .ButtonProposta
+    {
+        margin-bottom: -35px;
+    }
+
+    .TextDireita
+    {
+        margin-top: -38px;
+        font-size: 0.8rem;
     }
 }

@@ -8,21 +8,28 @@ import whatsappIcon from '../../assets/icons/Whatsapp_icon.png'; // Ícone do Wh
 
 function QuemSomos() {
   return (
-    <section className={Styles.Container}  style={{ backgroundImage: `url(${fundoImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section className={Styles.Container} style={{ backgroundImage: `url(${fundoImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       {/* Imagem de fundo */}
-      
+
       <section className={Styles.sectionContainer}>
         {/* Seção Quem Somos */}
         <div className={Styles.quemSomosContainer}>
           <h1 className={Styles.quemSomosTitle}>Quem somos?</h1>
           <p className={Styles.description}>
-            IZABEL ROCHA é a CEO da TRANSFORMASIE. Sua formação em diversas pós-graduações, e sua experiência como professora universitária traz à Transformasie uma condição plena de cuidar do seu planejamento financeiro e ampliar seus horizontes.
+            IZABEL ROCHA é a CEO da TRANSFORMASIE.
+            Sua formação em diversas pós-graduações,
+            e sua experiência como professora universitária
+            traz à Transformasie uma condição plena de cuidar
+            do seu planejamento financeiro
+            e ampliar seus horizontes.
           </p>
           <Link to="/sobre" className={Styles.saibaMais}>Saiba mais</Link> {/* Substituído para Link */}
         </div>
 
         {/* Seção da CEO */}
         <div className={Styles.linksContainer}>
+
+
           <div className={Styles.ceoContainer}>
             <img src={ceoImage} alt="CEO da Transformasie" className={Styles.ceoImage} />
             <div className={Styles.socialButtons}>
@@ -37,7 +44,10 @@ function QuemSomos() {
               </p>
             </div>
           </div>
+
         </div>
+
+        
       </section>
     </section>
   );

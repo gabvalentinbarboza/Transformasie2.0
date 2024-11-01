@@ -31,55 +31,44 @@
 
 .Container {
     width: 100%;
-    height: 1120px;
+    height: 1100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     position: relative;
     padding-top: 120px;
-    gap: 40px; /* Adicionado para espaçamento consistente */
+    gap: 40px;
+    /* Adicionado para espaçamento consistente */
 }
 
-.VisaoContainer
- {
-    width: 380px;
-    height: 630px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
- 
-}
-
+.VisaoContainer,
+.ValoresContainer,
 .MissaoContainer {
-    margin-top: 8px;
     width: 380px;
-    height: 600px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    align-content: space-around;
+
+
 }
 
-.ValoresContainer {
-    width: 380px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -6px;
-}
+
 
 /* Definindo o tamanho fixo para todos os círculos */
 .Circulo {
+    position: relative;
     background-color: var(--vermelho);
     width: 155px;
-    height: 155px; /* Tamanho fixo para garantir consistência */
+    height: 155px;
+    /* Tamanho fixo para garantir consistência */
     border-radius: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 0;
 }
 
 /* Garantindo que os ícones fiquem centralizados e com tamanho proporcional */
@@ -87,16 +76,22 @@
 .IconVisao,
 .IconValores {
     width: 60px;
-    height: 60px; /* Tamanho fixo para os ícones */
+    height: 60px;
+    /* Tamanho fixo para os ícones */
 }
 
 .TituloContainer {
     width: 100%;
-    height: 50px;
+    height: 20%;
     text-align: center;
     font-family: var(--font-sora-regular);
     color: var(--vermelho-bordo);
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
 }
 
 .Titulo {
@@ -105,17 +100,363 @@
 
 .pContainer {
     width: 100%;
-    height: 60%;
+    height: 40%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
+    justify-content: flex-start;
     align-items: center;
+
+
 }
 
 .paragrafo {
-    margin-top: 50px;
-    width: 70%;
-    height: 95%;
+    top: 0;
+    width: 90%;
+    height: auto;
     font-family: var(--font-poppins-regular);
     color: var(--verde-musgo);
-    font-size: 1.25rem;
+    font-size: 1.45rem;
+
+}
+
+
+@media (max-width: 1190px) {
+    .Container {
+        gap: 25px;
+    }
+
+    .TituloContainer {
+        margin-bottom: -90px;
+    }
+
+    .Container {
+        padding-left: 2%;
+    }
+
+    .paragrafo {
+        font-size: 1.2rem;
+    }
+
+
+
+    .Circulo {
+        background-color: var(--vermelho);
+        width: 100px;
+        height: 100px;
+        /* Tamanho fixo para garantir consistência */
+        border-radius: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+    }
+
+    /* Garantindo que os ícones fiquem centralizados e com tamanho proporcional */
+    .IconMissao,
+    .IconVisao,
+    .IconValores {
+        width: 40px;
+        height: 40px;
+        /* Tamanho fixo para os ícones */
+    }
+
+    .paragrafo {
+        font-size: 1.2rem;
+        height: 50%;
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 1106px) {
+
+    .Container {
+        padding-right: 35px;
+    }
+
+    .paragrafo {
+        text-align: center;
+        line-height: 30px;
+        font-size: 1rem;
+    }
+
+    .VisaoContainer,
+    .ValoresContainer,
+    .MissaoContainer {
+        width: 30%;
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 920px) {
+    .Container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 80px;
+    }
+
+    .TituloContainer {
+        margin-top: -225px;
+    }
+
+    .pContainer {
+        display: flex;
+
+    }
+
+
+    .VisaoContainer,
+    .ValoresContainer,
+    .MissaoContainer {
+        margin: 0;
+        padding: 0;
+        height: 200px;
+        width: 80%;
+        display: flex;
+        align-content: flex-start;
+      
+
+    }
+
+    .Circulo {
+        margin-right: 70%;
+    }
+
+    .TituloContainer {
+        position: absolute;
+        margin-top: 130px;
+        margin-right: 65%;
+        width: 200px;
+        height: 80px;
+        left: 75px;
+        align-items: center;
+        z-index: 5;
+
+
+
+    }
+
+    .Titulo {
+        text-align: left;
+    }
+
+    .Container {
+        margin-bottom: 420px;
+    }
+
+    .pContainer {
+        width: 650px;
+
+        height: 140px;
+        position: absolute;
+
+        margin: 0;
+        margin-left: 55%;
+        margin-bottom: 70px;
+
+        padding-bottom: 10%;
+    }
+
+    .paragrafo {
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        font-size: 1.2rem;
+        line-height: 29px;
+
+    }
+}
+
+@media (max-width: 890px) {
+    .Circulo {
+        margin-right: 85%;
+    }
+
+    .TituloContainer {
+        position: absolute;
+        margin-top: 100px;
+        margin-right: 95%;
+        width: 200px;
+        height: 80px;
+        left: 75px;
+        align-items: center;
+        margin-left: -50px;
+
+
+
+
+    }
+
+    .pContainer {
+        width: 450px;
+
+        height: 140px;
+        position: absolute;
+
+        margin: 0;
+        margin-left: 35%;
+        margin-bottom: 70px;
+        padding-bottom: 10%;
+    }
+
+    .paragrafo {
+        text-align: left;
+        width: 100%;
+        height: 150px;
+        font-size: 1.1rem;
+        line-height: 27px;
+        margin: 0;
+        margin-left: 100px;
+
+    }
+
+}
+
+@media (max-width: 800px) {
+    .paragrafo {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 740px) {
+
+    .Container
+    {
+        margin-bottom: 380px;
+        gap: 10px;
+    }
+
+    .paragrafo {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 23px;
+    }
+
+    .pContainer {
+        width: 350px;
+    }
+
+    .TituloContainer {
+        margin-top: 70px;
+    }
+
+    .Titulo {
+        font-size: 1.2rem;
+        margin-left: -20px;
+
+
+    }
+
+    .Circulo {
+
+        width: 80px;
+        height: 80px;
+        /* Tamanho fixo para garantir consistência */
+
+    }
+
+    /* Garantindo que os ícones fiquem centralizados e com tamanho proporcional */
+    .IconMissao,
+    .IconVisao,
+    .IconValores {
+        width: 35px;
+        height: 35px;
+        /* Tamanho fixo para os ícones */
+    }
+}
+
+@media (max-width: 630px) 
+
+
+{
+
+
+    .Circulo
+    {
+        position: relative;
+        margin: 0;
+        width: 130px;
+        height: 130px;
+        margin-bottom: 25px;
+    }
+
+    .TituloContainer   {
+        position: relative;
+        margin: 0;
+        width: 100%;
+        left: 0;
+    }
+    .Titulo
+    {
+        font-size: 2rem;
+    }
+
+    .pContainer   {
+        width: 100%;
+        height: 40%;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .paragrafo
+    {
+        width: 110%;
+        text-align: center;
+        font-size: 1.3rem;
+        line-height: 30px;
+        padding: 0;
+    }
+
+    .VisaoContainer,
+    .ValoresContainer,
+    .MissaoContainer {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content:  flex-start;
+        margin-right: 50px;
+    }
+
+    .IconMissao,
+    .IconVisao,
+    .IconValores {
+        width: 45px;
+        height: 45px;
+        /* Tamanho fixo para os ícones */
+    }
+}
+
+@media (max-width: 600px) 
+{
+    .paragrafo
+    {
+        width: 70%;
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 28px;
+        padding: 0;
+    }
+
+    .Container
+    {
+    
+        margin-top: -150px;
+    }
+}
+
+@media (max-width: 490px) 
+
+{
+.Container
+{
+    margin-top: -600px;
+    padding: 0;
+    margin-bottom: 300px;
+}
 }

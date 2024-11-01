@@ -35,59 +35,271 @@
     width: 100%;
     height: 1120px;
     display: flex;
+    flex-direction: row;
     position: relative;
+    margin-top: 35px;
 }
+
 
 .FotoFundoContainer {
-    margin-top: 90px;
-    width: 50%;
-    height: 97.9%;
-    left: 0;
-}
-
-.FotoFundo {
-
-    width: 100%;
+    background: url(../../assets/sobre/Sobre_Fundo.png);
+    background-size: cover;
     height: 100%;
-  
-    border-radius: 0px 0px 0px 50px;
+    width: 50%;
+    border-radius: 0px 0px 0px 40px;
 }
 
 .TextoContainer {
-    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: var(--verde-musgo);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    background-color: var(--verde-musgo);
-    right: 0;
-    border-radius: 0px 0px 50px 0px;
-    margin-top: 66px;
-  }
-
-.h1Container {
-
-    width: 70%;
-    height: 150px;
-    margin-top: 180px;
+    padding-top: 15%;
+    gap: 55px;
+    border-radius:  0px 0px 40px 0px;
 }
 
 .Tituloh1 {
-    font-family: var(--font-sora-semibold);
-    font-size: 3.5rem;
+    font-family: var(--font-sora-regular);
+    font-size: 3rem;
     color: var(--branco);
-}
-
-.paragrafoContainer {
-    width: 70%;
-    height: 550px;
-    margin-top: -50px;
-
 }
 
 .paragrafo {
-    font-family: var(--font-poppins-regular), sans-serif;
+    font-family: var(--font-sora-regular);
+    font-size: 3.5rem;
     color: var(--branco);
-    font-size: 2rem;
+    width: 100%;
+    line-height: 55px;
+    height: 100%;
+
+}
+.paragrafoContainer
+{
+    width: 100%;
+    height: 60%;
+}
+
+@media (max-width: 1200px) 
+
+{
+    .SobreNosContainer
+    
+    {
+        height: 850px;
+    }
+
+    .paragrafo
+    {
+
+        font-size: 1.3rem;
+        width: 70%;
+    }
+
+    .Tituloh1
+    {
+        font-size: 2.7rem;
+    }
+}
+
+@media (max-width: 1000px) 
+
+{
+
+    .SobreNosContainer
+    
+    {
+        height: 750px;
+    }
+
+    .paragrafo
+    {
+
+        font-size: 1.1rem;
+        width: 60%;
+        line-height: 34px;
+    }
+
+    .Tituloh1
+    {
+        font-size: 2.3rem;
+    }
+
+} 
+
+@media (max-width: 840px) 
+
+{
+
+    .SobreNosContainer{
+height: 850px;    
+    }
+    
+    .paragrafoContainer
+    {
+
+height: 50%;
+    
+
+
+    }
+
+    .paragrafo
+    {
+        height: 100%;
+        
+        font-size: 0.9rem;
+        line-height: 27px;
+    }
+
+    .TextoContainer
+    {
+        padding-bottom: 45px;
+    }
+
+} 
+@media (max-width: 800px) 
+
+{
+
+    .paragrafo
+    {
+
+        font-size: 0.9rem;
+        width: 60%;
+        height: 60%;
+        line-height: 24px;
+    }
+
+} 
+
+
+@media (max-width: 768px) 
+
+{
+
+    .FotoFundoContainer
+    {
+        background-position: center;
+    }
+
+    .paragrafo
+    {
+
+        font-size: 0.9rem;
+        width: 60%;
+        line-height: 28px;
+    }
+
+    .Tituloh1
+    {
+        margin-top: 25px;
+        font-size: 2rem;
+    }
+} 
+
+    .paragrafo
+    {
+
+        font-size: 1.1rem;
+        width: 60%;
+        line-height: 34px;
+    }
+
+    .Tituloh1
+    {
+        font-size: 2.3rem;
+    }
+
+    @media (max-width: 705px) 
+
+{
+
+        .SobreNosContainer
+        {
+            height: 2000px;
+            top: 440px;
+           display: flex;
+           flex-direction: column;
+        }
+        .TextoContainer
+        {
+            width: 100%;
+            height: 50%;
+            border-radius: 0px 0px 50px 50px;
+        }
+        .FotoFundoContainer
+        {
+            width: 100%;
+            height: 41%;
+            border-radius: 0;
+            background-position: center center;
+        }
+
+        .paragrafo
+        {
+    
+            font-size: 1.8rem;
+            width: 80%;
+            line-height: 44px;
+        }
+    
+        .Tituloh1
+        {
+            font-size: 3rem;
+        }
+.SobreNosContainer
+{
+    margin-bottom: 220px;
+}
+} 
+
+@media (max-width: 600px) 
+{
+    .paragrafo
+    {
+
+        font-size: 1.4rem;
+        width: 80%;
+        line-height: 40px;
+    }
+
+    .Tituloh1
+    {
+        font-size: 2rem;
+    }
+    .TextoContainer
+    {
+        padding-bottom: -20px;
+        height: 40%;
+    }
+}
+
+@media (max-width: 490px ) 
+
+{
+   .SobreNosContainer
+   {
+    top: 50px;
+   }
+    .paragrafo
+    {
+
+        font-size: 1.2rem;
+        width: 75%;
+        line-height: 36px;
+    }
+
+    .Tituloh1
+    {
+        font-size: 1.8rem;
+
+    }
+
+    
+    .TextoContainer
+    {
+        height: 34% ;
+    }
 }

@@ -27,14 +27,14 @@
 .servicesSection {
   margin-top: -170px;
   width: 100%;
-  height: 2600px; 
-  margin-bottom: 250px;
+  height: 2600px;
+  margin-bottom: 20px;
 }
 
 .tituloNossosServicosContainer {
   width: 100%;
   height: 200px;
-  background-color: var(--cinza-claro);  
+  background-color: var(--branco);
 }
 
 .tituloNossosServicos {
@@ -49,61 +49,22 @@
   justify-content: center;
 }
 
+/* Para Sua Empresa */
 .ParaSuaEmpresaContainer {
   background-color: var(--bege);
   width: 100%;
   height: 50%;
-  border-radius:  0px 0px 50px 50px;
-  margin-bottom: 100px;
+  border-radius: 50px 50px 0px 0px;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.ParaVoceContainer {
-  background-color: var(--verde-musgo);
-  width: 100%;
-  height: 30%;
-  border-radius: 0px 0px 50px 50px;
-  margin-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.BlocksParaSuaEmpresaContainer {
-  width: 80%;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-  grid-gap: 40px; /* Espaçamento entre os blocos */
-  justify-content: space-around ;/* Centraliza os itens */
-  align-items: center;
-  margin: 0 auto;
-}
-
-.BlocksParaVoceContainer {
-  width: 80%;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colunas para "Para Você" */
-  grid-gap: 40px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  padding-bottom: 0;
 
 }
-.containerArticleServices {
-  height: 2500px;
-  width: 100%;
-  margin-bottom: 100px;
-}
 
-.tituloParaSuaEmpresaContainer, .tituloParaVoceContainer {
+.tituloParaSuaEmpresaContainer {
   width: 100%;
   height: 200px;
 }
@@ -118,7 +79,127 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100%;
+  margin-bottom: 80%;
+  margin-top: 40px;
+}
+
+.BlocksParaSuaEmpresaContainer {
+  width: 90%;
+  /* Define 80% da largura do container pai */
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite a quebra de linha para os itens */
+  flex-direction: row;
+  justify-content: center;
+  /* Centraliza o conteúdo */
+  gap: 35px;
+  /* Espaçamento entre os blocos */
+  padding: 20px;
+  margin-bottom: 55px;
+  height: auto;
+}
+
+.ParaSuaEmpresaLink {
+  width: calc(33.33% - 35px);
+  /* Tamanho dos blocos para caber três por linha */
+  max-width: 300px;
+  /* Limita a largura máxima dos blocos */
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 1s ease, filter 0.4s ease;
+  margin: 25px;
+}
+
+/* Centraliza especificamente os dois últimos itens na segunda linha */
+.BlocksParaSuaEmpresaContainer>.ParaSuaEmpresaLink:nth-last-child(2) {
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+
+
+.ParaSuaEmpresaLink:hover {
+  transform: translateY(-10px);
+  filter: brightness(0.8);
+}
+
+.imageContainerParaSuaEmpresa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-size: 160%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15%;
+  transition: filter 0.4s ease;
+}
+
+.imageContainerParaSuaEmpresa:hover {
+  filter: brightness(0.7);
+}
+
+.textContainerParaSuaEmpresa {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: -280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.ParaSuaEmpresah3 {
+  font-size: 1.9rem;
+  color: var(--branco);
+  text-align: center;
+  font-family: var(--font-poppins-semibold);
+  width: 100%;
+  padding-top: 20px;
+  z-index: 5;
+  margin-top: 100px;
+}
+
+.Wave {
+
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  margin-top: 30px;
+  background: url(../../assets/nossos_servicos/Wave_image.png);
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+  margin-bottom: -15px;
+
+
+
+}
+
+/* Para Você */
+.ParaVoceContainer {
+  background-color: var(--verde-musgo);
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 60px 60px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 85px;
+}
+
+.tituloParaVoceContainer {
+  width: 100%;
+  height: 200px;
+  margin-bottom: -25px;
 }
 
 .tituloParaVoce {
@@ -134,51 +215,44 @@
   margin-bottom: 100%;
 }
 
-.ParaSuaEmpresaLink {
-  height: 300px;
-  width: 300px;
+.BlocksParaVoceContainer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  gap: 70px;
+  margin-bottom: 75px;
+}
+
+.ParaVoceLink {
+  height: auto;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  transition: transform 1s ease, filter 0.4s ease; /* Adicionado o filtro na transição */
+  transition: transform 1s ease, filter 0.4s ease;
 }
 
-.ParaVoceLink{
-  height: 300px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  transition: transform 1s ease, filter 0.4s ease; /* Adicionado o filtro na transição */
+.ParaVoceLink .imageContainerParaVoce {
+  padding-bottom: -20px;
 }
 
-.ParaSuaEmpresaLink:hover, .ParaVoceLink:hover {
-  transform: translateY(-10px); /* Sobe levemente */
-  filter: brightness(0.8); /* Adiciona um leve escurecimento no hover */
+.ParaVoceLink:hover {
+  transform: translateY(-10px);
+  filter: brightness(0.8);
 }
 
-.imageContainerParaSuaEmpresa {
+.imageContainerParaVoce {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px; 
-  background-size: 160%; 
-  background-position: center; 
-  background-repeat: no-repeat;
-  border-radius: 15%;
-  transition: filter 0.4s ease;
-}
- .imageContainerParaVoce {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 350px;
   background-size: 160%;
   background-position: center;
   background-repeat: no-repeat;
@@ -186,8 +260,8 @@
   transition: filter 0.4s ease;
 }
 
-.imageContainerParaSuaEmpresa:hover, .imageContainerParaVoce:hover {
-  filter: brightness(0.7); /* Reduz a claridade no hover */
+.imageContainerParaVoce:hover {
+  filter: brightness(0.7);
 }
 
 .textContainerParaVoce {
@@ -195,17 +269,6 @@
   width: 100%;
   height: 100%;
   margin-top: -250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
-}
-
-.textContainerParaSuaEmpresa {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  margin-top: -280px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,16 +285,262 @@
   margin-top: 40px;
 }
 
-.ParaSuaEmpresah3 {
-  font-size: 2.1rem;
-  color: var(--branco);
-  text-align: center;
-  font-family: var(--font-poppins-semibold);
-  width: 100%;
-  padding-top: 20px;
-  z-index: 5;
+@media (max-width: 1310px) {
+
+  .servicesSection {
+    margin-top: -170px;
+    width: 100%;
+    height: 2600px;
+    margin-bottom: -10px;
+  }
+
+
+  .BlocksParaSuaEmpresaContainer {
+    width: 90%;
+    /* Define 80% da largura do container pai */
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite a quebra de linha para os itens */
+    flex-direction: row;
+    justify-content: center;
+    /* Centraliza o conteúdo */
+    gap: 20px;
+    /* Espaçamento entre os blocos */
+    padding: 0;
+    margin-bottom: 55px;
+    height: auto;
+
+  }
+
+  .ParaSuaEmpresaLink {
+    width: calc(33.33% - 25px);
+    margin: 10px;
+  }
+
+
+
+
 }
 
-.ParaSuaEmpresah3 {
-  margin-top: 100px;
+@media (max-width: 1130px) {
+
+  .tituloParaVoce,
+  .tituloParaSuaEmpresa {
+    font-size: 3.8rem;
+  }
+
+  .BlocksParaSuaEmpresaContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1070px) {
+
+  .ParaSuaEmpresaLink {
+    width: 270px;
+    height: 270px;
+    margin: 20px;
+  }
+
+  .ParaSuaEmpresah3 {
+    font-size: 1.5rem;
+    color: var(--branco);
+    text-align: center;
+    font-family: var(--font-poppins-semibold);
+    width: 100%;
+    padding-top: 20px;
+    z-index: 5;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1030px) {
+
+  .ParaVoceh3 {
+    margin-top: 105px;
+    font-size: 2.2rem;
+  }
+
+  .imageContainerParaVoce {
+    border-radius: 20%;
+  }
+
+  .tituloNossosServicosContainer {
+    max-width: 100%;
+
+  }
+
+  .tituloNossosServicos {
+    font-size: 4rem;
+    width: 100%;
+  }
+
+  .tituloParaVoceContainer,
+  .tituloParaSuaEmpresaContainer {
+    margin-bottom: -85px;
+  }
+
+  .tituloParaVoce,
+  .tituloParaSuaEmpresa {
+    font-size: 3.5rem;
+  }
+
+  .BlocksParaSuaEmpresaContainer {
+
+
+    width: 100%;
+    padding: 0;
+    gap: 5px;
+  }
+
+  .ParaSuaEmpresaLink {
+    width: 220px;
+    height: 220px;
+    margin: 20px;
+  }
+
+  .imageContainerParaSuaEmpresa {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 900px) {
+  .ParaVoceLink {
+    width: 250px;
+    height: 250px;
+  }
+
+  .imageContainerParaVoce {
+    width: 250px;
+    height: 250px;
+  }
+
+  .ParaVoceh3 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 805px) {
+  .BlocksParaSuaEmpresaContainer {
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 10px;
+  }
+
+  .ParaSuaEmpresaLink {
+    margin: 10px 0px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .ParaSuaEmpresah3 {
+    margin-top: 255px;
+    font-size: 1.1rem;
+  }
+
+  .imageContainerParaSuaEmpresa {
+    width: 200px;
+    height: 200px;
+
+  }
+}
+
+@media (max-width: 760px) {
+
+  .servicesSection {
+    margin-top: -170px;
+    width: 100%;
+    height: 3000px;
+    margin-bottom: 610px;
+    padding: 0;
+  }
+
+  .BlocksParaSuaEmpresaContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza os itens */
+    justify-content: center;
+    gap: 200px;
+    padding: 0;
+    /* Remove o padding-left */
+
+    padding-bottom: 180px;
+  }
+
+  .imageContainerParaSuaEmpresa {
+    width: 300px;
+    height: 300px;
+    margin: 20px -20px;
+    /* Centraliza cada bloco individualmente */
+  }
+
+  .ParaSuaEmpresaLink {
+    width: 100%;
+    max-width: 300px;
+    /* Define largura máxima para centralizar */
+    height: auto;
+    margin: 10px 0;
+    /* Ajusta margens para centralização */
+
+  }
+
+  .ParaSuaEmpresah3 {
+    margin-top: 50px;
+    font-size: 1.5rem;
+  }
+
+  .tituloParaSuaEmpresa,
+  .tituloParaVoce {
+    font-size: 2.4rem;
+  }
+
+  .tituloNossosServicos {
+    font-size: 3.2rem;
+  }
+
+  .BlocksParaVoceContainer
+  {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 100px;
+    width: 60%;
+    margin-bottom: 50px;
+  }
+
+  .ParaVoceLink
+  {
+    width: 350px;
+    height: 350px;
+  }
+
+  .imageContainerParaVoce
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+  
+}
+
+@MEDIA (max-width: 560px) 
+
+
+{
+
+  
+  .tituloNossosServicos {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .tituloParaSuaEmpresa, .tituloParaVoce {
+    font-size: 2.1rem;
+  }
 }
