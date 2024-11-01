@@ -5,11 +5,7 @@ import Footer from '../../components/Footer/Footer';
 import ServicoDescricao from '../../components/ServicoDescricao/ServicoDescricao.jsx';
 
 // Importação das imagens para os serviços
-import ImgFinanceira from '../../assets/ParaSuaEmpresaImg/assessoriafinanceiraimg.png';
-import ImgWorkshops from '../../assets/ParaSuaEmpresaImg/palestrasworkshopsimg.png';
-import ImgLongetividade from '../../assets/ParaSuaEmpresaImg/preparacaoparalongetividade.png';
-import ImgSupplyChain from '../../assets/ParaSuaEmpresaImg/supplychainimg.png';
-import ImgRH from '../../assets/ParaSuaEmpresaImg/consultoriarhimg.png';
+
 import ImgGrupo from '../../assets/ParaVoceImg/MentoriaEmGrupoImg.png';
 import ImgIndividual from '../../assets/ParaVoceImg/MentoriaIndividualImg.png';
 

@@ -37,16 +37,19 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 80px;
-    margin-bottom: -250px;
+    margin-bottom: -50px;
 
 }
 
 .TituloContainer {
-    position: absolute;
+    position: relative;
     top: -100px;
-   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
-    
+    height: auto;
+
 }
 
 .Titulo {
@@ -54,15 +57,15 @@
     font-weight: 800;
     font-size: 4rem;
     line-height: 60px;
-    margin-left: -80px;
     left: 114px;
     color: var(--verde-musgo);
 }
 
 .AdBlog {
-    width: 90%; /* Cobre a largura total do container */
+    width: 90%;
+    /* Cobre a largura total do container */
     height: 680px;
-    background: url('../../assets/fundo_ad_blog_image.png') no-repeat center/cover;
+    background: url('../../assets/fundo_ad_blog_image.png') no-repeat center center/cover;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -71,15 +74,17 @@
 }
 
 .TextoContainer {
-    width: 807px;
+    width: 50%;
     height: 312px;
     margin-top: 54px;
-    margin-left: 550px;
+    margin-left: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-  }
+    margin-bottom: 50px;
+}
+
 .Texto {
     font-family: var(--font-sora-bold);
     font-size: 1.5rem;
@@ -94,10 +99,11 @@
     height: 150px;
     position: absolute;
     bottom: 150px;
-    right: 80px;
+    right: 8%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .Button {
@@ -111,19 +117,220 @@
     color: var(--branco);
     cursor: pointer;
     text-align: center;
-    line-height: 88px; /* Alinha verticalmente o texto */
+    line-height: 88px;
+    /* Alinha verticalmente o texto */
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .Button:hover {
-    background-color: var(--amarelo);
+    background-color: var(--vermelho);
     transition: 0.5s;
 }
+
 .Button::after:hover {
     background-color: var(--laranja);
     transition: 0.5s;
+}
+
+@media (max-width: 1300px) {
+    .AdBlogContainer {
+        margin-bottom: 650px;
+    }
+}
+
+@media (max-width: 1270px) {
+
+
+    .Titulo {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1150px) {
+
+
+    .TextoContainer {
+        margin-left: 400px;
+    }
+}
+
+
+@media (max-width: 1020px) {
+    .AdBlogContainer {
+        margin-bottom: 900px;
+    }
+}
+
+
+
+
+@media (max-width: 950px) {
+
+    .Titulo {
+        font-size: 2.5rem;
+    }
+
+    .TextoContainer {
+        margin-left: 300px;
+    }
+
+    .Texto {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 890px) {
+    .TextoContainer {
+        gap: 45px;
+
+    }
+
+    .ButtonContainer {
+        top: 250px;
+        margin-top: 280px;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .AdBlogContainer
+    {
+        margin-bottom: 1050px;
+    }
+
+    .TextoContainer {
+        margin-top: 140px;
+
+        width: 80%;
+        margin-left: 90px;
+    }
+
+    .Texto {
+        font-size: 1.5rem;
+    }
+
+    .TituloContainer {
+        width: 80%;
+    }
+}
+
+@media (max-width: 760px) 
+
+{
+.AdBlogContainer{
+
+    margin-bottom: -420px;
+}
+}
+
+@media (max-width: 560px) {
+
+    .TextoContainer {
+
+        margin-left: 25%;
+
+    }
+
+    .Texto {
+        width: 100%;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .AdBlogContainer{
+
+        margin-bottom: -580px;
+    }  
+}
+
+@media (max-width: 560px) {
+
+
+    .Texto {
+        font-size: 1.3rem;
+        margin-right: 10%;
+    }
+
+    .Button {
+        width: 320px;
+        height: 80px;
+        background: var(--laranja);
+        border: none;
+        border-radius: 40px;
+        font-family: var(--font-sora-bold);
+        font-size: 30px;
+        color: var(--branco);
+        cursor: pointer;
+        text-align: center;
+        line-height: 88px;
+        /* Alinha verticalmente o texto */
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+}
+
+@media (max-width: 530px) {
+    .Titulo {
+        font-size: 2.2rem;
+    }
+
+    .TextoContainer {
+
+        margin-left: 20%;
+
+    }
+
+    .Texto {
+        font-size: 1.3rem;
+        margin-right: 10%;
+    }
+
+
+    .Button {
+        width: 280px;
+        height: 70px;
+        font-size: 27px;
+
+
+    }
+}
+
+@media (max-width: 490px) {
+    .ButtonContainer {
+        max-width: 100%;
+    }
+
+    .Button {
+        width: 260px;
+        height: 50px;
+        font-size: 24px;
+
+
+    }
+
+}
+
+@media (max-width: 490px) {
+
+    .TextoContainer {
+        margin-top: 150px;
+        margin-left: 15%;
+        gap: 17px;
+
+    }
+
+    .Texto {
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
 }

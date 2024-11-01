@@ -13,7 +13,6 @@ function Home() {
       <QuemSomos />
       <NossosServicos />
       <PopUp title="Começe a sua jornada!" />
-
         </main>
         <Footer />
     </>
@@ -22,10 +21,3 @@ function Home() {
 
 export default Home;
 
-/*
-
-    
-        
-         
-
-*/

@@ -1,7 +1,5 @@
 /* Estilos básicos para a Home */
 
-@import url('/fonts/fonts.css');
-
 /* Definindo variáveis de cores */
 :root {
     --branco: #FFFFFF;
@@ -44,6 +42,7 @@
     position: relative;
     width: 100%;
     height: 2750px;
+    margin-bottom: 35px;
 }
 
 .TituloParaVoceContainer {
@@ -67,3 +66,62 @@
 }
 
 /* Outras classes baseadas no layout Figma */
+@media (max-width: 1080px) 
+
+{
+
+
+    .TituloParaVoce{
+
+        font-size: 3.7rem;
+
+    }
+
+
+    .ParaVoceContainer
+    {
+        margin-bottom: 85px;
+    }
+}
+@media (max-width: 970px) 
+
+{
+    .ParaVoceContainer
+    {
+        margin-bottom: 335px;
+    }
+}
+@media (max-width: 870px) 
+
+{
+    .ParaVoceContainer
+    {
+        margin-bottom: 435px;
+    }
+}
+
+@media (max-width: 790px) 
+
+{
+    .ParaVoceContainer
+    {
+        margin-bottom: 535px;
+    }
+}
+
+@media (max-width: 750px) 
+
+{
+    .ParaVoceContainer
+    {
+        margin-bottom: 635px;
+    }
+}
+
+@media (max-width: 650px) 
+{
+    .ParaVoceContainer
+    {
+        margin-bottom: 835px;
+    }
+}

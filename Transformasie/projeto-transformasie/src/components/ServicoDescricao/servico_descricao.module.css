@@ -31,7 +31,7 @@
 .Container {
     position: relative;
     width: 100%;
-    padding: 50px;
+    padding: 50px 50px 50px 50px;
     background-color: var(--branco); /* Fundo principal da seção */
     border-radius: 20px;
   margin: 100px 0px 100px 0px;
@@ -139,3 +139,77 @@
 .BotaoReceberProposta:hover {
     background: #e68b00; /* Tom mais escuro no hover */
 }
+
+
+/* Ajustes de responsividade */
+@media (max-width: 910px) {
+
+    .Container{
+
+        padding: 30px 0px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Conteiner  ,.TextoContainer,.TituloContainer,.SubtituloContainer {
+     padding: 50px;
+    }
+.TituloContainer
+{
+    height: auto;
+    padding: 0;
+
+}
+    .Titulo {
+        font-size: 46px;
+        line-height: 60px;
+        height: auto;
+    }
+.SubtituloContainer
+{
+    background-color: #248F61;
+    padding: 0;
+    height: auto;
+    width: 95%;
+}
+    .Subtitulo {
+        font-size: 40px;
+        background-color: aqua;
+    }
+
+    .Texto {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .FicouInteressado {
+        font-size: 36px;
+    }
+    .BotaoContainer
+    {
+        width: 100%;
+        background-color: #248F61;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .BotaoReceberProposta {
+        font-size: 28px;
+        width: 70%; /* Ajuste o botão para largura total se necessário */
+    }
+
+    .ImagemContainer {
+        height: auto; /* Mantém a altura proporcional à largura */
+    }
+
+    .Imagem {
+        width: 100%; /* Ocupa 100% da largura do container */
+        height: auto; /* Ajuste automático de altura */
+        border-radius: 0;
+    }
+
+}
+
+

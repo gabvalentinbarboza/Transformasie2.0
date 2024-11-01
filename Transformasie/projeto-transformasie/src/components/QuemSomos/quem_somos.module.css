@@ -1089,6 +1089,7 @@
 
 @media (max-width: 460px) {
     .ceoImage {
+        margin-left: -235px;
         right: 360px;
     }
 

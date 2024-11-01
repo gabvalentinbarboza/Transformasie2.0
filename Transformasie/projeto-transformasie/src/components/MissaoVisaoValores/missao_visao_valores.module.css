@@ -120,7 +120,6 @@
 
 }
 
-
 @media (max-width: 1190px) {
     .Container {
         gap: 25px;
@@ -192,6 +191,7 @@
 
 @media (max-width: 920px) {
     .Container {
+    
         height: auto;
         display: flex;
         flex-direction: column;
@@ -248,7 +248,7 @@
     }
 
     .pContainer {
-        width: 650px;
+        width: 450px;
 
         height: 140px;
         position: absolute;

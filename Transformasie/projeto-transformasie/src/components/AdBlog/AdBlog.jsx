@@ -13,13 +13,15 @@ function AdBlog() {
         </div>
 
         <article className={Styles.AdBlog}>
+
             <div className={Styles.TextoContainer}>
+
                 <p className={Styles.Texto}>
                     Nosso blog é um espaço onde
-                    compartilhamos artigos sobre <br />
-                    educação financeira e <br />
+                    compartilhamos artigos sobre 
+                    educação financeira e 
                     planejamento.
-                    <br />
+                   
                 </p>
 
                 <p className={Styles.Texto}>
@@ -28,6 +30,7 @@ function AdBlog() {
                     insights valiosos para ajudar você a
                     melhorar sua saúde financeira.
                 </p>
+
             </div>
 
             <div className={Styles.ButtonContainer}>
@@ -36,6 +39,8 @@ function AdBlog() {
                     Saiba Mais
                 </Link>
             </div>
+
+            
         </article>
     </section>
     );
