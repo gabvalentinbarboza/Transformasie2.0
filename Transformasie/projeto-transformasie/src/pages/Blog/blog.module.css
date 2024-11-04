@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.PopUpBlogContainer
+{
+    right: 0;
+    width: 50%;
+}

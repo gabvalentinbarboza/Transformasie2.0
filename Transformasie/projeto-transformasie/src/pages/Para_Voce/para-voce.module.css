@@ -4,15 +4,17 @@
 :root {
     --branco: #FFFFFF;
     --preto: #000000;
-    --bege: #FDE4A1; /* Corrigido para 'bege' */
-    --cinza-claro: #EDEDED; /* Renomeado para evitar duplicação */
+    --bege: #FDE4A1;
+    /* Corrigido para 'bege' */
+    --cinza-claro: #EDEDED;
+    /* Renomeado para evitar duplicação */
     --vermelho-bordo: #9E1010;
     --amarelo: #FFA800;
     --vermelho: #FE4A45;
     --verde: #248F61;
     --verde-musgo: #073B38;
 }
-  
+
 /* Tipografia */
 :root {
     --font-poppins-bold: 'Poppins-Bold', sans-serif;
@@ -28,16 +30,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
+}
 
-  main {
+
+main {
     flex: 1;
     width: 100%;
     margin-bottom: 100px;
-  }
+}
 
-  .ParaVoceContainer {
+.ParaVoceContainer {
     top: 220px;
     position: relative;
     width: 100%;
@@ -62,66 +64,88 @@
     font-size: 4rem;
     line-height: 90px;
     color: var(--verde-musgo);
-   
+
 }
 
 /* Outras classes baseadas no layout Figma */
-@media (max-width: 1080px) 
+@media (max-width: 1300px) {
+    .TituloParaVoce {
+        font-size: 2.5rem;
+    }
+}
 
-{
+@media (max-width: 1100px) {
+    .TituloParaVoce {
+        font-size: 2.5rem;
+    }
+}
 
-
-    .TituloParaVoce{
-
+@media (max-width: 1080px) {
+    .TituloParaVoce {
         font-size: 3.7rem;
-
     }
 
-
-    .ParaVoceContainer
-    {
+    .ParaVoceContainer {
         margin-bottom: 85px;
     }
 }
-@media (max-width: 970px) 
 
-{
-    .ParaVoceContainer
-    {
+@media (max-width: 970px) {
+    .ParaVoceContainer {
         margin-bottom: 335px;
     }
 }
-@media (max-width: 870px) 
 
-{
-    .ParaVoceContainer
-    {
+@media (max-width: 900px) {
+    .TituloParaVoce {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 870px) {
+    .ParaVoceContainer {
         margin-bottom: 435px;
     }
 }
 
-@media (max-width: 790px) 
+@media (max-width: 800px) {
+    .TituloParaVoce {
+        font-size: 2.1rem;
+        left: 0;
+        margin-right: 50px;
+    }
+}
 
-{
-    .ParaVoceContainer
-    {
+@media (max-width: 790px) {
+    .ParaVoceContainer {
         margin-bottom: 535px;
     }
 }
 
-@media (max-width: 750px) 
-
-{
-    .ParaVoceContainer
-    {
+@media (max-width: 750px) {
+    .ParaVoceContainer {
         margin-bottom: 635px;
     }
 }
 
-@media (max-width: 650px) 
-{
-    .ParaVoceContainer
-    {
+@media (max-width: 705px) {
+    .ParaVoceContainer {
+        margin-top: 400px;
+    }
+
+    .TituloParaVoce {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .ParaVoceContainer {
         margin-bottom: 835px;
+    }
+}
+
+@media (max-width: 490px) {
+    .ParaVoceContainer {
+        margin-top: 0px;
     }
 }

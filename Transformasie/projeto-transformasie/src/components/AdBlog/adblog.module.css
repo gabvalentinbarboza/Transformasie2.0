@@ -251,7 +251,10 @@
 
 @media (max-width: 560px) {
 
-
+.TextoContainer
+{
+    margin-top: 230px;
+}
     .Texto {
         font-size: 1.3rem;
         margin-right: 10%;
@@ -280,12 +283,14 @@
 }
 
 @media (max-width: 530px) {
+      
+
     .Titulo {
         font-size: 2.2rem;
     }
 
     .TextoContainer {
-
+       
         margin-left: 20%;
 
     }
@@ -306,6 +311,15 @@
 }
 
 @media (max-width: 490px) {
+.AdBlog
+{
+    padding-top: 80px;
+    
+}
+    .TextoContainer{
+        margin-top: 90px;
+        gap: 15px;
+    }
     .ButtonContainer {
         max-width: 100%;
     }

@@ -24,11 +24,16 @@ function ParaSuaEmpresa() {
                         titulo="Assessoria Financeira"
                         imagem={ImgFinanceira}
                         subtitulo="Como funciona uma Assessoria Financeira?"
-                        texto={`Analisamos todo santo mês suas vendas, custos, despesas, lucro e fluxo de caixa. Solução ideal para médio/longo prazo, dividida em 3 camadas:
-                              • Relatórios: organizamos seus números e registros para você ler o seu negócio.
-                              • Análises: interpretamos seus números para lhe dizer exatamente o que significam.
-                              • Estratégias: quais os planos de ação você deve seguir?`}
+                        texto={
+                            <>
+                                {"Analisamos todo santo mês suas vendas, custos, despesas, lucro e fluxo de caixa. Solução ideal para médio/longo prazo, dividida em 3 camadas:"}<br /><br />
+                                {"• Relatórios: organizamos seus números e registros para você ler o seu negócio."}<br />
+                                {"• Análises: interpretamos seus números para lhe dizer exatamente o que significam."}<br />
+                                {"• Estratégias: quais os planos de ação você deve seguir?"}
+                            </>
+                        }
                     />
+
 
                     <ServicoDescricao
                         titulo="Palestras e Workshops"

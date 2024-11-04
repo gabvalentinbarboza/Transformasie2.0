@@ -11,7 +11,7 @@
     --vermelho: #FE4A45;
     --verde: #248F61;
 }
-  
+
 /* Tipografia */
 :root {
     --font-poppins-bold: 'Poppins-Bold', sans-serif;
@@ -22,19 +22,22 @@
     --font-sora-semibold: 'Sora-SemiBold', sans-serif;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 /* Container principal do serviço */
 .Container {
     position: relative;
+    height: auto;
     width: 100%;
     padding: 50px 50px 50px 50px;
-    background-color: var(--branco); /* Fundo principal da seção */
+    background-color: var(--branco);
+    /* Fundo principal da seção */
     border-radius: 20px;
-  margin: 100px 0px 100px 0px;
+    margin: 100px 0px 100px 0px;
 }
 
 /* Título principal */
@@ -43,7 +46,7 @@
     width: 90%;
     margin-bottom: 40px;
     text-align: left;
-   
+
     display: flex;
     align-items: flex-start;
 }
@@ -57,7 +60,7 @@
     color: var(--vermelho);
     margin-bottom: 20px;
     text-align: left;
-  
+
 }
 
 /* Imagem do serviço */
@@ -78,7 +81,7 @@
 .SubtituloContainer {
     margin-top: 30px;
     text-align: left;
-   
+
     display: flex;
     align-items: flex-start;
 }
@@ -87,7 +90,7 @@
     font-family: var(--font-poppins-semibold);
     font-size: 42px;
     color: var(--verde-musgo);
-   
+
 }
 
 /* Texto de descrição */
@@ -137,14 +140,27 @@
 }
 
 .BotaoReceberProposta:hover {
-    background: #e68b00; /* Tom mais escuro no hover */
+    background: #e68b00;
+    /* Tom mais escuro no hover */
+}
+
+@media (max-width: 1150px) {
+
+
+    .Titulo {
+        font-size: 3rem;
+    }
+
 }
 
 
 /* Ajustes de responsividade */
 @media (max-width: 910px) {
+    .TextoContainer {
+        width: 90%;
+    }
 
-    .Container{
+    .Container {
 
         padding: 30px 0px 30px 0px;
         display: flex;
@@ -153,30 +169,31 @@
         gap: 15px;
     }
 
-    .Conteiner  ,.TextoContainer,.TituloContainer,.SubtituloContainer {
-     padding: 50px;
+    .Container .SubtituloContainer {
+        padding: 50px;
     }
-.TituloContainer
-{
-    height: auto;
-    padding: 0;
 
-}
+    .TituloContainer {
+        height: auto;
+        padding: 0;
+
+    }
+
     .Titulo {
         font-size: 46px;
         line-height: 60px;
         height: auto;
     }
-.SubtituloContainer
-{
-    background-color: #248F61;
-    padding: 0;
-    height: auto;
-    width: 95%;
-}
+
+    .SubtituloContainer {
+        padding: 0;
+        height: auto;
+        width: 95%;
+    }
+
     .Subtitulo {
         font-size: 40px;
-        background-color: aqua;
+
     }
 
     .Texto {
@@ -184,32 +201,224 @@
         line-height: 30px;
     }
 
-    .FicouInteressado {
-        font-size: 36px;
+    .FicouInteressadoContainer {
+        padding: 10px 10% 10px 10%;
+        height: auto;
     }
-    .BotaoContainer
-    {
+
+    .FicouInteressado {
+        font-size: 2rem;
+    }
+
+    .BotaoContainer {
         width: 100%;
-        background-color: #248F61;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .BotaoReceberProposta {
         font-size: 28px;
-        width: 70%; /* Ajuste o botão para largura total se necessário */
+        width: 70%;
+        /* Ajuste o botão para largura total se necessário */
     }
 
     .ImagemContainer {
-        height: auto; /* Mantém a altura proporcional à largura */
+        height: auto;
+        /* Mantém a altura proporcional à largura */
     }
 
     .Imagem {
-        width: 100%; /* Ocupa 100% da largura do container */
-        height: auto; /* Ajuste automático de altura */
+        width: 100%;
+        /* Ocupa 100% da largura do container */
+        height: auto;
+        /* Ajuste automático de altura */
         border-radius: 0;
     }
 
 }
 
 
+@media (max-width: 780px) {
+    .TextoContainer {
+        margin-top: -5px;
+    }
+
+    .FicouInteressadoContainer {
+        margin: 0;
+    }
+
+    .TituloContainer {
+        margin-bottom: 0;
+    }
+
+    .Titulo {
+
+        font-size: 2rem;
+    }
+
+    .SubtituloContainer {
+        display: flex;
+        margin-bottom: 90px;
+        height: 200px;
+        padding: 0;
+        padding-bottom: 80px;
+    }
+
+    .Subtitulo {
+        position: relative;
+        width: 100%;
+        height: 130%;
+    }
+}
+
+@media (max-width: 700px) {
+    .Texto {
+        margin-top: -90px;
+        font-size: 1.2rem;
+        height: auto;
+    }
+
+    .BotaoReceberProposta {
+        font-size: 1.2rem;
+        width: 70%;
+
+    }
+
+    .SubtituloContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .Subtitulo {
+        font-size: 1.8rem;
+        left: 0;
+    }
+
+    .Titulo {
+        font-size: 1.8rem;
+    }
+
+    .Container {
+        margin-bottom: -20px;
+    }
+
+    .FicouInteressado
+    {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .Texto {
+
+        font-size: 1.2rem;
+
+    }
+
+    .BotaoReceberProposta {
+        font-size: 1.2rem;
+
+
+    }
+
+    
+
+    .Subtitulo {
+        font-size: 1.8rem;
+        
+        display: flex;
+        text-align: left;
+        padding: 0;
+        margin-right: 50px;
+       
+    }
+
+    .Titulo {
+        font-size: 1.8rem;
+    }
+
+    .Container {
+        margin-bottom: -50px;
+    }
+
+    .FicouInteressado
+    {
+        font-size: 1.4rem;
+    }
+    .SubtituloContainer
+    {
+        height: 100px;
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 650px) 
+{
+    .SubtituloContainer
+    {
+        height: 200px;
+        margin-bottom: 30px;
+        margin-top: -40px;
+    }
+
+    .FicouInteressado{
+
+        font-size: 1.5rem;
+    }
+
+    .Subtitulo
+    {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 620px) 
+{
+    .SubtituloContainer
+    {
+        height: 200px;
+        margin-bottom: 30px;
+        margin-top: -40px;
+    }
+
+    .Subtitulo
+    {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 450px) 
+
+{
+
+    .SubtituloContainer
+    {
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .FicouInteressado
+    {
+        font-size: 1rem;
+        margin-bottom: -40px;
+    }
+}
+
+@media (max-width: 430px) 
+
+{
+    
+    .SubtituloContainer
+    {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .Subtitulo
+    {
+        font-size: 1.3rem;
+    }
+
+}
