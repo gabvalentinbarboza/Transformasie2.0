@@ -40,6 +40,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 5;
 }
 
 /* Centralizando e organizando o footer */
@@ -594,22 +595,18 @@
 }
 
 @media (max-width: 493px) {
- 
 
-  .navTitle
-  {
+
+  .navTitle {
     font-size: 1rem;
   }
 
-  .Links
-  {
+  .Links {
     font-size: 0.94rem;
   }
 
-  .footerArticle
-  {
+  .footerArticle {
     margin-left: -10px;
     margin-bottom: 35px;
   }
 }
-

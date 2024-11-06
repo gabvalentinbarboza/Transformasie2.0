@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+/* Restante do seu código permanece o mesmo */
+
+.ContainerCarrossel {
+    width: 100%;
+    height: auto;
+    margin: 150px 0px 250px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Alinha o conteúdo centralizado */
+    z-index: -5;
+}
+
+.TitleContainer {
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+}
+
+.Title {
+    font-family: var(--font-sora-regular);
+    font-size: 5rem;
+    color: var(--verde-musgo);
+
+}
+.BlockServicos {
+    position: relative; /* Para permitir o posicionamento dos pseudo-elementos */
+    height: 450px; /* Altura do carrossel */
+    width: 100%; /* Ocupar toda a largura da tela */
+
+    display: flex;
+    justify-content: flex-start; /* Alinhar os itens para o início */
+    align-items: center;
+    overflow-x: auto; /* Habilita rolagem horizontal */
+    padding: 0 150px 0 150px; /* Ajuste para adicionar espaço nas laterais */
+    cursor: grab; /* Muda o cursor para indicar interatividade */
+    scroll-behavior: smooth; /* Adiciona suavidade ao movimento de rolagem */
+    z-index: 1; /* Z-index para garantir que os itens estejam acima da sombra */
+    user-select: none; /* Impede a seleção de texto */
+    overflow: hidden;
+}
+
+.BlockServicos::before,
+.BlockServicos::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%; /* Ocupa a altura do carrossel */
+    width: 150px; /* Largura da sombra */
+    pointer-events: none; /* Para não interferir no mouse */
+    z-index: 1; /* Z-index para ficar atrás do carrossel */
+}
+
+.BlockServicos::before {
+    position: fixed;
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1.7), rgba(85, 255, 0, 0)); /* Sombra da esquerda */
+}
+
+.BlockServicos::after {
+    position: fixed;
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1.7), rgba(0, 255, 255, 0)); /* Sombra da direita */
+}
+
+
+.Block {
+    width: 550px; /* Largura fixa para os itens do carrossel */
+    height: 90%; /* Altura dos itens */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    flex-shrink: 0; /* Impede o encolhimento dos itens */
+    margin: 0 20px; /* Adiciona espaçamento entre os blocos */
+    border-radius: 50px;
+    background-size: cover; /* Mantém o tamanho da imagem coberto */
+    background-position: center; /* Centraliza a imagem */
+}
+
+
+.TitleServico {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-sora-bold);
+    font-size: 1.5rem;
+    margin-bottom: 145px;
+    color: var(--branco);
+}
+
+.TextServico {
+    width: 80%;
+    text-align: left;
+    font-family: var(--font-sora-bold);
+    font-size: 1.3rem;
+    height: 80px;
+    color: var(--branco);
+    width: 80%;
+    
+}
+
+/* Restante do seu código continua o mesmo */
+
+.ConsultoriaRH {
+    background-image: url('../../assets/CARD_OQO_RH.png');
+}
+
+.ConsultoriaSupplyChain {
+    background-image: url('../../assets/CARD_OQO_SUPPLY_CHAIN.png');
+}
+
+.PalestraseWorkshops {
+    background-image: url('../../assets/CARD_OQO_PALESTRAS.png');
+}
+
+.PreparacaoparaLongevidade {
+    background-image: url('../../assets/CARD_OQO_LONGETIVIDADE.png');
+  
+}
+
+.BeneficiosEducacaoFinanceira {
+    background-image: url('../../assets/CARD_OQO_BENEFICIOS.png');
+
+}
