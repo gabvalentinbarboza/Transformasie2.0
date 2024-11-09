@@ -1,0 +1,105 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container {
+    height: auto;
+    width: 50%;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 15;
+    right: 0;
+    
+}
+
+
+.TitleContainer {
+    width: 80%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-family: var(--font-poppins-regular);
+    margin-bottom: 50px;
+    align-items: center;
+}
+.Title
+{
+    width: auto;
+}
+
+.PopUp {
+    width: 710px;
+    height: 475px;
+    display: flex;
+    flex-direction: row;
+    z-index: 5;
+
+}
+
+.PosterContainer {
+    width: 50%;
+    background-color: rgb(144, 104, 219);
+    background: url(../../assets/Foto_PopUp.png);
+    border-radius: 11.5% 0% 0% 11.5%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TextoSobreImagem {
+    margin-top: 200px;
+    font-size: 1.5rem;
+    color: var(--branco);
+    font-family: var(--font-poppins-semibold);
+}
+
+
+.PropostaContainer {
+    width: 50%;
+    padding-bottom: 20px;
+    background-color: var(--vermelho);
+    border-radius: 0% 11.5% 11.5% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.PropostaTitle {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    color: var(--branco);
+}
+
+.TextDireita {
+    font-size: 1.3rem;
+    color: var(--branco);
+    width: 70%;
+}
+
+.ButtonProposta {
+    width: 80%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--amarelo);
+    text-decoration: none;
+    color: var(--branco);
+    border-radius: 50px;
+    transition: 0.8s;
+    font-size: 1.5rem;
+}
+
+.ButtonProposta:hover {
+    background-color: var(--verde);
+}
