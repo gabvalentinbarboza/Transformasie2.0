@@ -1,39 +1,34 @@
 import React from "react";
 import Styles from './artigocomponent.module.css';
 
-function ArtigoComponent() {
+function ArtigoComponent({ titulo, imagemCapa, dataPostagem, ultimaAtualizacao, descricao, conteudo }) {
     return (
         <section className={Styles.ArtigoComponent}>
-
-            <div className={TituloArtigoContainer}>
-                <h1 className={TituloArtigo}>
-
-                </h1>
+            <div className={Styles.TituloArtigoContainer}>
+                <h1 className={Styles.TituloArtigo}>{titulo}</h1>
             </div>
+
 
             <div className={Styles.ArtigoCapa}>
+                {imagemCapa && <img src={imagemCapa} alt={`Capa do artigo ${titulo}`} />}
             </div>
 
-            <div className={Styles.detalhesContainer}>
-                <p className={Styles.detalhes}>
-                </p>
-                <p className={Styles.AtualizadoHaX}>
-                </p>
+
+            <p className={Styles.detalhes}>
+                Postado em {new Date(dataPostagem).toLocaleDateString('pt-BR')}
+            </p>
+            <p className={Styles.AtualizadoHaX}>
+                - Atualizado em {new Date(ultimaAtualizacao).toLocaleDateString('pt-BR')}
+            </p>
+
+            <h3 className={Styles.DescricaoArtigo}>{descricao}</h3>
+            <div className={Styles.Conteudo}>
+                {conteudo}
             </div>
 
-            <h3 className={Styles.DescricaoArtigo}>
 
-            </h3>
-
-<p className={Styles.Subtitulo}>
-
-</p>
-<p className={Styles.Paragrafo}>
-    
-</p>
         </section>
     );
-
 }
 
 export default ArtigoComponent;

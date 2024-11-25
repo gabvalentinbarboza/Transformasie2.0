@@ -1,6 +1,99 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Estilos para o ArtigoComponent */
+.ArtigoComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0;
+    padding: 0 20px;
+    height: auto;
+}
+
+/* Estilo do container do título */
+.TituloArtigoContainer {
+    background-color: #4a6be2; /* Cor de fundo mais suave e profissional */
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px; /* Ajustando a distância superior */
+    padding: 0 20px;
+    border-radius: 8px;
+}
+
+/* Estilo do título do artigo */
+.TituloArtigo {
+    font-family: var(--font-poppins-semibold);
+    font-size: 2.5rem; /* Reduzindo um pouco o tamanho da fonte */
+    text-align: center;
+    color: var(--branco);
+    max-width: 90%;
+}
+
+/* Estilo para a capa do artigo */
+.ArtigoCapa {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: rgb(168, 86, 245);
+}
+
+.ArtigoCapa {
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+/* Container para os detalhes do artigo */
+.detalhesContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #777;
+}
+
+/* Estilo para as datas do artigo */
+.detalhes {
+    font-style: italic;
+}
+
+/* Estilo para a atualização do artigo */
+.AtualizadoHaX {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Descrição do artigo */
+.DescricaoArtigo {
+    font-size: 1.6rem;
+    font-family: var(--font-poppins-medium);
+    margin: 20px 0;
+    text-align: center;
+    color: #333;
+    width: 100%;
+}
+
+
+
+/* Estilo para o parágrafo do conteúdo */
+.Conteudo {
+    font-family: var(--font-poppins-regular);
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+    width: 100%;
 }

@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+  .textoGrande {
+    font-size: 64px; /* Tamanho grande */
+  }
+  
+  .textoMedio {
+    font-size: 20px; /* Tamanho médio */
+  }
+  
+
+
+/* Usando as variáveis do :root para o formulário */
+.FormContainer {
+    margin: 155px 0 25px 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formArtigo {
+    font-family: var(--font-poppins-regular);
+    background-color: var(--bege);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.formTitle {
+    width: 50%;
+    height: 130px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-poppins-regular);
+    color: var(--verde-musgo);
+    font-size: 3rem;
+}
+
+.formDescription
+{
+    width: 50%;
+    height: 130px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-poppins-regular);
+    color: var(--verde-musgo);
+    font-size: 1.2rem;
+
+}
+
+.formGroup {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.formLabel {
+    font-family: var(--font-poppins-regular);
+    color: var(--verde-musgo);
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.7rem;
+}
+
+.formInput,
+.formTextarea,
+.formFileInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 4px;
+    font-family: var(--font-poppins-regular);
+    font-size: 16px;
+    color: var(--preto);
+    background-color: var(--branco);
+}
+
+.formTextarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.formFileInput {
+    border: none; /* Remover borda para o campo de imagem */
+    background-color: var(--branco);
+    padding: 10px;
+    font-size: 16px;
+    font-family: var(--font-poppins-regular);
+    cursor: pointer;
+}
+
+.formButton {
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 45px;
+    font-family: var(--font-poppins-semibold);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 40%;
+}
+
+.formButton:disabled {
+    background-color: var(--cinza-claro);
+    cursor: not-allowed;
+}
+
+.formButton:hover {
+    background-color: var(--verde-musgo);
+}
+
+.successMessage {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--verde);
+    color: var(--branco);
+    border-radius: 4px;
+    font-family: var(--font-poppins-regular);
+    text-align: center;
+}
+
+.errorMessage {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--vermelho-bordo);
+    color: var(--branco);
+    border-radius: 4px;
+    font-family: var(--font-poppins-regular);
+    text-align: center;
+}
