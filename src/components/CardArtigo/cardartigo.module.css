@@ -68,3 +68,21 @@
     text-decoration: none; /* Mantém o sublinhado desativado ao passar o mouse */
 }
 
+.ImageClass {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.NoImage {
+    width: 80px; /* Tamanho fixo para o ícone de "No Image" */
+    height: 80px;
+    object-fit: contain;
+    margin-top: 50px;
+}

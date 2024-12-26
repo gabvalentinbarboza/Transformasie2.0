@@ -7,15 +7,22 @@ function CardArtigo({ imagem, hasLink, linkTo, artigoId, titulo, descricao }) {
     // Verificação para garantir que o título, a descrição e a imagem existam
     const validTitulo = titulo ? titulo : "Título não disponível";
     const validDescricao = descricao ? descricao : "Descrição não disponível";
-    const validImage = imagem ? imagem : NoImage;  // Agora 'imagem' é o arquivo de imagem
+    const validImage = imagem
+        ? `http://localhost:8803/uploads/imagens_card/${imagem}`
+        : NoImage;
 
-    // Formatação do título para a URL (colocando o título na URL como parte do link)
+
+    // Formatação do título para a URL
     const formattedTitle = encodeURIComponent(validTitulo.toLowerCase().replace(/\s+/g, '-'));
 
     const cardContent = (
         <article className={`${Style.CardArtigo} ${hasLink ? Style.LinkClass : ''}`}>
             <div className={Style.ArtigoBackground}>
-                <img src={validImage} alt={validTitulo} />
+                <img
+                    className={`${Style.ImageClass} ${!imagem ? Style.NoImage : ''}`} // Adiciona uma classe se não houver imagem
+                    src={validImage}
+                    alt={validTitulo}
+                />
             </div>
             <div className={Style.TextContainer}>
                 <h3 className={Style.ArtigoTitle}>
