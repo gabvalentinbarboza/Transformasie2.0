@@ -16,7 +16,7 @@ const RoutesConfig = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog/admintransformasie/escrever-artigo" element={<FormPage />} />
+        <Route path="/blog/admintransformasieartigos" element={<FormPage />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/lista-de-artigos" element={<Artigos />} />

@@ -35,7 +35,7 @@ function Blog() {
                         {artigos.slice(0, 2).map((artigo) => (
                             <CardArtigo
                                 key={artigo.id}
-                                imagem={artigo.imagem_capa}
+                                imagem={artigo.imagem_card}
                                 hasLink={true}
                                 linkTo={`/blog/${artigo.id}`}
                                 artigoId={artigo.id}
@@ -50,7 +50,7 @@ function Blog() {
                         {artigos.slice(2, 5).map((artigo) => (
                             <CardArtigo
                                 key={artigo.id}
-                                imagem={artigo.imagem_capa}
+                                imagem={artigo.imagem_card}
                                 hasLink={true}
                                 linkTo={`/blog/${artigo.id}`}
                                 artigoId={artigo.id}
