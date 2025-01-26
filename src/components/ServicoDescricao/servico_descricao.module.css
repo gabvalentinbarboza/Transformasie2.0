@@ -137,10 +137,11 @@
     cursor: pointer;
     transition: background 0.3s ease;
     margin-top: 50px;
+    text-decoration: none;
 }
 
 .BotaoReceberProposta:hover {
-    background: #e68b00;
+    background: var(--vermelho);
     /* Tom mais escuro no hover */
 }
 

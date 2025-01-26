@@ -27,7 +27,7 @@ function PopUp({ title }) { // Aceitando a prop title
                     <p className={Styles.TextDireita}>
                         Com apenas alguns cliques, informe-nos sua necessidade e receba nossa proposta personalizada de forma rápida e fácil.
                     </p>
-                    <Link className={Styles.ButtonProposta}>Receber Proposta</Link>
+                    <Link to="/fale-conosco" className={Styles.ButtonProposta}>Receber Proposta</Link>
                 </div>
             </article>
 

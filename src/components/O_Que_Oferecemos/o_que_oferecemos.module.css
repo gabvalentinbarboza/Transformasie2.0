@@ -34,6 +34,7 @@
     position: relative;
     width: 100%;
     height: auto;
+    min-height: 800px;
     background: url('../../assets/Background_oQqueOferecemos.png') no-repeat center center/cover;
     border-radius: 62px;
     display: flex;
@@ -43,6 +44,7 @@
     /* Centraliza os textos horizontalmente */
     margin-top: -340px;
     margin-bottom: 150px;
+
 }
 
 /* Título principal */
@@ -67,7 +69,6 @@
 
 /* Texto Frame */
 .TextoFrameContainer {
-
     padding: 20px;
     text-align: center;
     position: relative;
@@ -103,7 +104,15 @@
     height: auto;
     /* Ajuste de altura automático para o parágrafo */
     padding-left: 40px;
+    
 
+}
+@media (max-width: 1300px) 
+{
+    .Container
+    {
+        margin-bottom: 350px;
+    }
 }
 
 @media (max-width: 1210px) {
@@ -158,39 +167,71 @@
     }
 }
 
+@media (max-width: 900px)
+ {
+
+ }
+
 @media (max-width: 820px) {
 
-    .TextoFrameContainer {
-        display: flex;
-
-        align-items: flex-start;
-    }
 
     .TextoFrame {
         margin: 0;
-
         font-size: 0.8rem;
         line-height: 24px;
     }
+
+    .TextoFrameContainer {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        max-height: 90%;
+        align-items: flex-start;
+        margin-left: 10%;
+        gap: 50px;
+        margin-bottom: 250px;
+    }
+
+    .TextoFrame
+    {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    
+
+    
 }
 
 @media (max-width: 700px) {
 
-    .TextoFrame {
-        width: 30%;
+   
 
-        font-size: 0.72rem;
-        line-height: 20px;
-    }
-
-    .TituloContainer {
-        padding-left: 0;
-    }
 
     .Titulo {
         font-size: 2.3rem;
     }
 
+
+    .TextoFrameContainer {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        max-height: 90%;
+        align-items: flex-start;
+        margin-left: 10%;
+        gap: 50px;
+        margin-bottom: 250px;
+    }
+
+    .TextoFrame
+    {
+      
+        width: 80%;
+        font-size: 1.1rem;
+    }
 
 }
 
@@ -200,15 +241,6 @@
     .Container
     {
         margin-top: -500px;
-    }
-    .TextoFrameContainer {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        max-height: 90%;
-        align-items: center;
-        gap: 30px;
     }
 
 

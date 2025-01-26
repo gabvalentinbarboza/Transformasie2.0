@@ -1,0 +1,416 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.NossosProdutosContainer {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 200px;
+
+
+}
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --bege: #FDE4A1; /* Corrigido para 'bege' */
+    --cinza-claro: #EDEDED; /* Renomeado para evitar duplicação */
+    --vermelho-bordo: #9E1010;
+    --amarelo: #FFA800;
+    --vermelho: #FE4A45;
+    --verde: #248F61;
+    --verde-musgo: #073B38;
+    --cinza-fundo: #F1F0EF;
+}
+  
+/* Tipografia */
+:root {
+    --font-poppins-bold: 'Poppins-Bold', sans-serif;
+    --font-poppins-regular: 'Poppins-Regular', sans-serif;
+    --font-poppins-semibold: 'Poppins-SemiBold', sans-serif;
+    --font-sora-bold: 'Sora-Bold', sans-serif;
+    --font-sora-regular: 'Sora-Regular', sans-serif;
+    --font-sora-semibold: 'Sora-SemiBold', sans-serif;
+}
+/* Definindo variáveis de cores */
+
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer {
+    position: relative;
+    width: 855px;
+    height: 600px;
+    background-color: var(--branco);
+    border: 5px solid var(--verde-musgo);
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+
+.modalTitle {
+    font-family: var(--font-poppins-regular);
+    font-weight: 400;
+    font-size: 44px;
+    color: var(--verde-musgo);
+    margin-bottom: 20px;
+    width: 80%;
+   
+}
+
+
+
+.modalTopicos {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    width: 100%;
+    padding: 35px;
+    height: 90%;
+    overflow-y: auto;
+    /* Permite scroll vertical */
+
+    /* Estilização da barra de rolagem para Firefox */
+    scrollbar-width: thin;
+    /* Espessura da barra de rolagem */
+    scrollbar-color: var(--verde-musgo) var(--cinza-fundo);
+    /* Cor do thumb e da trilha */
+}
+
+.modalTopicos::-webkit-scrollbar {
+    width: 10px;
+    /* Largura da barra de rolagem */
+}
+
+.modalTopicos::-webkit-scrollbar-track {
+    background: var(--cinza-fundo);
+    /* Cor de fundo da trilha */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+}
+
+.modalTopicos::-webkit-scrollbar-thumb {
+    background: var(--verde-musgo);
+    /* Cor da parte que se move */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+}
+
+.modalTopicos::-webkit-scrollbar-thumb:hover {
+    background: var(--verde);
+    /* Cor ao passar o mouse */
+}
+
+
+.topico {
+    font-family: var(--font-poppins-regular);
+    font-size: 32px;
+    line-height: 1.5;
+    color: var(--verde);
+    margin-bottom: 40px;
+    display: flex;
+    align-items: left;
+    /* Alinha verticsalmente a bolinha e o texto */
+
+}
+
+/* Botão de Fechar customizado com o ícone */
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    .modalContainer {
+        width: 700px;
+        /* Diminui a largura do modal */
+        height: 500px;
+        /* Diminui a altura do modal */
+        padding: 50px;
+        /* Ajusta o padding */
+    }
+
+    .modalTitle {
+        font-size: 30px;
+        /* Reduz o tamanho da fonte do título */
+        padding-left: 15px;
+        margin-bottom: 15px;
+        margin-right: 45px;
+    }
+
+    .modalTopicos {
+        padding: 40px;
+        /* Ajusta o padding lateral */
+        height: 80%;
+        /* Reduz a altura da área dos tópicos */
+    }
+
+    .topico {
+        font-size: 24px;
+        /* Reduz o tamanho da fonte dos tópicos */
+        margin-bottom: 15px;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+    .modalContainer {
+        width: 90%;
+        /* O modal ocupará 90% da largura da tela */
+        height: auto;
+        /* Permite que o modal se ajuste dinamicamente à altura */
+        padding: 20px;
+        /* Reduz o padding para economizar espaço */
+        margin-bottom: 30px;
+    }
+
+    .modalTitle {
+        font-size: 35px;
+        /* Tamanho da fonte reduzido, mas ainda legível */
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .modalTopicos {
+            height: 50vh;
+            /* Ajusta a altura para 50% da altura da viewport */
+            overflow-y: auto;
+            /* Permite o scroll apenas no eixo vertical */
+            padding-left: 20px;
+            /* Ajusta o padding para uma melhor visualização em telas menores */
+
+        }
+        .modalTitle
+        {
+            font-size: 27px;
+        }
+
+        /* Mantém o estilo da barra de rolagem */
+        .modalTopicos::-webkit-scrollbar {
+            width: 8px;
+            padding-left: 25px;
+            /* Largura da barra de rolagem um pouco menor para dispositivos móveis */
+        }
+
+        .modalTopicos::-webkit-scrollbar-track {
+            background: var(--cinza-fundo);
+            border-radius: 8px;
+        }
+
+        .modalTopicos::-webkit-scrollbar-thumb {
+            background: var(--verde-musgo);
+            border-radius: 8px;
+        }
+
+        .modalTopicos::-webkit-scrollbar-thumb:hover {
+            background: var(--verde);
+        }
+    }
+
+    .topico {
+        font-size: 26px;
+        /* Reduz o tamanho da fonte para tablets */
+        margin-bottom: 10px;
+    }
+
+    .closeButton img {
+        width: 50px;
+        /* Reduz o tamanho do ícone de fechar */
+        height: 50px;
+    }
+}
+
+
+@media (max-width: 707px) {
+    .modalContainer {
+        width: 85%;
+        /* Ocupa 85% da largura da tela */
+        height: 450px;
+        /* Define uma altura menor */
+        padding: 15px;
+        /* Reduz o padding */
+
+    }
+
+
+
+    .modalTopicos {
+
+        height: 80%;
+        /* Reduz a altura dos tópicos */
+        padding-left: 15px;
+        overflow-y: auto;
+        /* Permite scroll vertical */
+    }
+
+    .topico {
+        font-size: 22px;
+        /* Reduz o tamanho dos textos */
+        margin-bottom: 10px;
+    }
+
+
+}
+
+@media (max-width: 650px) {
+    .modalContainer {
+        width: 80%;
+        /* O modal ocupa 90% da largura da tela */
+        height: 70%;
+        /* Ajusta dinamicamente a altura */
+        padding: 10px;
+        /* Reduz o padding para economizar espaço */
+        margin-bottom: 20px;
+        justify-content: flex-start;
+        /* Mantém o conteúdo próximo ao topo */
+    }
+
+    .modalTitle {
+
+        /* Tamanho da fonte para telas menores */
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .modalTopicos {
+        height: 60%;
+        /* Define 60% da altura da viewport */
+        margin-top: 45px;
+        /* Aproxima os tópicos do título */
+        padding-left: 10px;
+        /* Ajusta o padding lateral */
+        overflow-y: auto;
+        /* Permite rolagem vertical */
+        margin-bottom: -45px;
+
+    }
+
+    .topico {
+        font-size: 21px;
+        /* Ajusta o tamanho da fonte */
+        margin-bottom: 8px;
+    }
+    .closeButton
+    {
+        top: 15px;
+        right: 15px;
+    }
+
+    .closeButton img {
+        width: 40px;
+        /* Reduz o tamanho do ícone de fechar */
+        height: 40px;
+    }
+
+    .modalTitle {
+        margin-bottom: -20px;
+    }
+}
+
+@media (max-width: 630px) {
+    .modalContainer {
+        height: 70%;
+        padding-bottom: 20px;
+    }
+
+ 
+
+    .topico {
+        font-size: 20px;
+    }
+    .modalTitle 
+    {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 580px) {
+    .topico {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 524px) {
+    .modalContainer {
+        width: 90%;
+      
+    }
+
+    .topico {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 470px) {
+    .modalTitle {
+        font-size: 1.2rem;
+    }
+
+    .closeButton
+    {
+        top: 10px;
+        right: 10px;
+   
+    }
+    .closeButton img
+    {
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+@media (max-width: 405px) 
+
+{
+    .modalTitle{
+        font-size: 1.3rem;
+        margin-left: -10px;
+    }
+}
+
+@media (max-width: 370px) 
+
+{
+    .closeButton
+    {
+        top: 10px;
+        right: 10px;
+   
+    }
+    .closeButton img
+    {
+        width: 25px;
+        height: 25px;
+    }
+}

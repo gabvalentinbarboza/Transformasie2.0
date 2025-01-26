@@ -84,7 +84,7 @@
 }
 
 .BlocksParaSuaEmpresaContainer {
-  width: 90%;
+  width: 80%;
   /* Define 80% da largura do container pai */
   display: flex;
   flex-wrap: wrap;
@@ -112,6 +112,7 @@
   text-decoration: none;
   transition: transform 1s ease, filter 0.4s ease;
   margin: 25px;
+  cursor: pointer;
 }
 
 /* Centraliza especificamente os dois últimos itens na segunda linha */

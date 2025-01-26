@@ -58,23 +58,29 @@
     padding-top: 15%;
     gap: 55px;
     border-radius:  0px 0px 40px 0px;
+    
 }
 
 .Tituloh1 {
     font-family: var(--font-sora-regular);
-    font-size: 3rem;
     color: var(--branco);
+    font-size: 4.4rem;
 }
 
 .paragrafo {
     font-family: var(--font-sora-regular);
-    font-size: 3.5rem;
+    font-size: 1.5rem;
     color: var(--branco);
-    width: 100%;
-    line-height: 55px;
+    width: 60%;
+    line-height: 35px;
     height: 100%;
+    text-align: justify;
 
 }
+
+
+
+
 .paragrafoContainer
 {
     width: 100%;
@@ -119,6 +125,7 @@
         font-size: 1.1rem;
         width: 60%;
         line-height: 34px;
+        text-align: left;
     }
 
     .Tituloh1
@@ -159,6 +166,8 @@ height: 50%;
     }
 
 } 
+
+
 @media (max-width: 800px) 
 
 {
@@ -199,18 +208,7 @@ height: 50%;
     }
 } 
 
-    .paragrafo
-    {
-
-        font-size: 1.1rem;
-        width: 60%;
-        line-height: 34px;
-    }
-
-    .Tituloh1
-    {
-        font-size: 2.3rem;
-    }
+ 
 
     @media (max-width: 705px) 
 

@@ -66,3 +66,32 @@ main {
   flex: 1;
   width: 100%;
 }
+
+@media (max-width: 1300px) 
+{
+  .PopUpContainerSobre
+  {
+    margin-top: 890px;
+  }
+}
+@media (max-width: 1020px) 
+{
+  .PopUpContainerSobre
+  {
+    margin-top: 990px;
+  }
+}
+@media (max-width: 770px) 
+{
+  .PopUpContainerSobre
+  {
+    margin-top: 1200px;
+  }
+}
+@media (max-width: 760px) 
+{
+  .PopUpContainerSobre
+  {
+    margin-top: -200px;
+  }
+}

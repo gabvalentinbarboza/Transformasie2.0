@@ -20,7 +20,7 @@ function Sobre() {
                 <SobreNos />
                 <MissaoVisaoValores />
                 <OqueOferecemos />
-                <AdBlog />
+               
             
                 <div className={Styles.PopUpContainerSobre}>
                     <PopUp title="Ficou interessado? Receba agora uma proposta!" />

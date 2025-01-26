@@ -102,99 +102,42 @@
 
 
 /* Estilo para o conteúdo geral */
-.Conteudo {
-    font-family: var(--font-poppins-regular);
-    font-size: 1rem;
-    color: var(--verde-musgo); /* Cor de texto principal */
-    line-height: 1.8;
-    margin-bottom: 30px;
-    text-align: justify;
-    width: 100%;
-    min-height: 80vh;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: var(--verde); /* Fundo leve */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Artigocomponent.module.css */
-
-/* Container do PDF */
-/* Conteúdo do PDF */
-.PdfContainer {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: left;
-    padding: 20px;
-}
-
-/* Estilos para o conteúdo HTML */
-.HtmlContent {
-    font-family: var(--font-poppins-bold);
-    line-height: 1.6;
-    color: var(--verde-musgo);
-    font-size: 1rem;
-    padding: 15px;
-    background-color: var(--branco);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    max-width: 100%;
-    word-wrap: break-word; /* Garante que o texto se ajuste à tela */
-}
-
-/* Links dentro do conteúdo */
-.HtmlContent a {
-    color: var(--vermelho); /* Cor para links */
-    text-decoration: none;
-}
-
-.HtmlContent a:hover {
-    text-decoration: underline;
-}
-
-/* Parágrafos */
-.HtmlContent p {
-    margin-bottom: 15px;
-    font-size: 1rem;
-    color: var(--verde-musgo);
-}
-
-/* Títulos dentro do conteúdo */
-.HtmlContent h1, .HtmlContent h2, .HtmlContent h3 {
-    color: var(--verde-musgo);
-    font-family: var(--font-poppins-bold);
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-/* Listas dentro do conteúdo */
-.HtmlContent ul, .HtmlContent ol {
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-.HtmlContent li {
-    margin-bottom: 10px;
-}
-
-/* Imagens dentro do conteúdo HTML */
-.HtmlContent img {
-    max-width: 100%;
+/* Estilo para o conteúdo geral */
+.ConteudoContainer {
     height: auto;
-    border-radius: 38px;
-    margin-bottom: 20px;
+    width: 90%;
+    min-height: 300px;
+    border: solid 2px rgb(1, 48, 36);
 }
 
-/* Canvas que contém o conteúdo do PDF */
-.CustomCanvas {
-    width: 100%; /* Ajusta a largura do canvas */
-    height: auto; /* Mantém a proporção do PDF */
-    max-width: 1000px; /* Define o tamanho máximo do canvas */
-    border-radius: 8px; /* Adiciona cantos arredondados */
-    margin: 0 auto; /* Centraliza o canvas */
-    display: block; /* Garante que seja tratado como um bloco */
-    text-align: justify;
+.conteudo {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
 }
 
+
+/* Estilos principais do PDF */
+.PDFContainer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.PDFDocument {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PDFPage {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}

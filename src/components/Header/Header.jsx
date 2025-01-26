@@ -38,9 +38,7 @@ function Header() {
           <li className={Styles.navItem}>
             <Link to="/sobre" className={Styles.Links}>Sobre</Link>
           </li>
-          <li className={Styles.navItem}>
-            <Link to="/blog" className={Styles.Links}>Blog</Link>
-          </li>
+        
          
           <li className={Styles.navItem}>
             <Link to="/para-voce" className={Styles.Links}>Para você</Link>

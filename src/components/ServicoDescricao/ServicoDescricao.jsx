@@ -1,5 +1,6 @@
 import React from 'react';
 import Styles from './servico_descricao.module.css';
+import { Link } from 'react-router-dom'; // Importe o Link do react-router-dom
 // Importe das imagens conforme os caminhos fornecidos
 
 
@@ -28,7 +29,7 @@ function ServicoDescricao({ titulo, imagem, subtitulo, texto }) {
             </div>
 
             <div className={Styles.BotaoContainer}>
-                <button className={Styles.BotaoReceberProposta}>Receber proposta</button>
+                <Link to="/fale-conosco" className={Styles.BotaoReceberProposta}>Receber proposta</Link>
             </div>
 
         </section>

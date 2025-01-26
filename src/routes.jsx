@@ -9,6 +9,7 @@ import Artigos from './pages/Artigos/Artigos.jsx';
 import FormPage from './pages/FormPage/FormPage.jsx';
 import ScrollToTop from './ScrollToTop.jsx';
 import ArtigoPage from './pages/ArtigoPage/ArtigoPage.jsx';
+import FaleConosco from './pages/FaleConosco/FaleConosco.jsx';
 
 const RoutesConfig = () => {
   return (
@@ -24,6 +25,7 @@ const RoutesConfig = () => {
         <Route path="/blog/:id/:titulo" element={<ArtigoPage />} />
         <Route path="/para-voce" element={<ParaVoce />} />
         <Route path="/para-sua-empresa" element={<ParaSuaEmpresa />} />
+        <Route path="/fale-conosco" element={<FaleConosco />} />
         <Route path="*" element={<div>Página não encontrada</div>} />
       </Routes>
     </Router>
