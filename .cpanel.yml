@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - /usr/local/bin/npm install
+    - /usr/local/bin/npm run build
+    - export DEPLOYPATH=/home2/tran5633/public_html/
+    - /bin/cp -R dist/* $DEPLOYPATH
