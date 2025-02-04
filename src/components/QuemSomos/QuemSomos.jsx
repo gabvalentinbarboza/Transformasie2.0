@@ -16,12 +16,10 @@ function QuemSomos() {
         <div className={Styles.quemSomosContainer}>
           <h1 className={Styles.quemSomosTitle}>Quem somos?</h1>
           <p className={Styles.description}>
-            IZABEL ROCHA é a CEO da TRANSFORMASIE.
-            Sua formação em diversas pós-graduações,
-            e sua experiência como professora universitária
-            traz à Transformasie uma condição plena de cuidar
-            do seu planejamento financeiro
-            e ampliar seus horizontes.
+            A Transformasie é uma consultoria dedicada a transformar vidas através da educação financeira.
+            Com uma abordagem diversificada, inclusiva e participativa,
+            buscamos disseminar o conhecimento e contribuir para uma sociedade mais equitativa e consciente...
+
           </p>
           <Link to="/sobre" className={Styles.saibaMais}>Saiba mais</Link> {/* Substituído para Link */}
         </div>
@@ -47,7 +45,7 @@ function QuemSomos() {
 
         </div>
 
-        
+
       </section>
     </section>
   );
