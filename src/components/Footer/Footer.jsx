@@ -80,7 +80,7 @@ function Footer() {
                   <div className={Styles.iconContainer}>
                     <img src={WhatsappLogo} className={Styles.icon} />
                   </div>
-                  <Link to="/WhatsApp" className={Styles.Links}>WhatsApp</Link>
+                  <Link to="https://wa.me/+511970328578" className={Styles.Links}>WhatsApp</Link>
                 </li>
               </ul>
             </nav>
@@ -99,13 +99,13 @@ function Footer() {
                   <div className={Styles.iconContainer}>
                     <img src={InstagramLogo} className={Styles.icon} />
                   </div>
-                  <Link to="/instagram" className={Styles.Links}>Instagram</Link>
+                  <Link to="https://www.instagram.com/transformasie.financas/" className={Styles.Links}>Instagram</Link>
                 </li>
                 <li className={Styles.navItem}>
                   <div className={Styles.iconContainer}>
                     <img src={LinkedinLogo} className={Styles.icon} />
                   </div>
-                  <Link to="/linkedin" className={Styles.Links}>LinkedIn</Link>
+                  <Link to="https://www.linkedin.com/company/transformasie/" className={Styles.Links}>LinkedIn</Link>
                 </li>
                 <li className={Styles.navItem}>
 
@@ -113,7 +113,7 @@ function Footer() {
                     <img src={FacebookLogo} className={Styles.icon} />
                   </div>
 
-                  <Link to="/facebook" className={Styles.Links}>Facebook</Link>
+                  <Link to="https://www.facebook.com/transformasieinteligenciafinanceira" className={Styles.Links}>Facebook</Link>
                 </li>
               </ul>
             </nav>
