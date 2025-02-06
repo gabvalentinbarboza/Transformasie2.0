@@ -74,7 +74,7 @@ function Footer() {
                   <div className={Styles.iconContainer}>
                     <img src={MailLogo} className={Styles.icon} />
                   </div>
-                  <Link to="/E-mail" className={Styles.Links}>E-mail</Link>
+                  <Link to="contato@transformasie.com.br" className={Styles.Links} alt = "contato@transformasie.com.br">E-mail</Link>
                 </li>
                 <li className={Styles.navItem}>
                   <div className={Styles.iconContainer}>

@@ -8,6 +8,7 @@ import MissaoVisaoValores from '../../components/MissaoVisaoValores/MissaoVisaoV
 import OqueOferecemos from '../../components/O_Que_Oferecemos/OqueOferecemos';
 import AdBlog from '../../components/AdBlog/AdBlog';
 import PopUp from '../../components/PopUp_Formulario/PopUp_Formulario';
+import BiografiaCeo from '../../components/BiografiaCeo/BiografiaCeo';
 
 
 
@@ -18,6 +19,7 @@ function Sobre() {
             <Header />
             <main>
                 <SobreNos />
+                <BiografiaCeo />
                 <MissaoVisaoValores />
                 <OqueOferecemos />
                

@@ -33,7 +33,7 @@
 
 .SobreNosContainer {
     width: 100%;
-    height: 1120px;
+    height: 1370px;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -44,6 +44,7 @@
 .FotoFundoContainer {
     background: url(../../assets/sobre/Sobre_Fundo.png);
     background-size: cover;
+    background-position: top center;
     height: 100%;
     width: 50%;
     border-radius: 0px 0px 0px 40px;
@@ -55,7 +56,7 @@
     background-color: var(--verde-musgo);
     display: flex;
     flex-direction: column;
-    padding-top: 15%;
+    padding-top: 8%;
     gap: 55px;
     border-radius:  0px 0px 40px 0px;
     
@@ -74,7 +75,7 @@
     width: 60%;
     line-height: 35px;
     height: 100%;
-    text-align: justify;
+    text-align: left;
 
 }
 
@@ -84,30 +85,76 @@
 .paragrafoContainer
 {
     width: 100%;
-    height: 60%;
+    height: 70%;
+}
+@media (max-width: 1600px) 
+
+{
+    .paragrafo {
+        font-family: var(--font-sora-regular);
+        font-size: 1.2rem;
+        color: var(--branco);
+        width: 60%;
+        line-height: 35px;
+        height: 100%;
+        text-align: left;
+    
+    }
+}
+@media (max-width: 1500px) 
+
+{
+    .Tituloh1
+    {
+        margin-top: 50px;
+        font-size: 2.8rem;
+    }
 }
 
+
+
+@media (max-width: 1330px) 
+
+{
+    .paragrafo
+    {
+        font-size: 1rem;
+    }
+}
 @media (max-width: 1200px) 
 
 {
     .SobreNosContainer
     
     {
-        height: 850px;
+        height: 950px;
     }
 
     .paragrafo
     {
 
-        font-size: 1.3rem;
+        font-size: 1rem;
         width: 70%;
+        line-height: 24px;
+        margin-top: -25px;
     }
 
     .Tituloh1
     {
         font-size: 2.7rem;
+
     }
 }
+@media (max-width: 1100px) {
+
+    .SobreNosContainer
+    
+    {
+        height: 950px;
+    }
+
+}
+
 
 @media (max-width: 1000px) 
 
@@ -116,7 +163,7 @@
     .SobreNosContainer
     
     {
-        height: 750px;
+        height: 1550px;
     }
 
     .paragrafo
@@ -135,12 +182,35 @@
 
 } 
 
+@media (max-width: 960px)  
+
+{
+    .SobreNosContainer{
+        height: 1750px;    
+            }
+            .TextoContainer
+            {
+                padding-left: 5%;
+            }
+.paragrafoContainer
+{
+    width: 80%;
+}
+            .paragrafo{
+text-align: left;
+width: 100%;
+                font-size: 0.9rem;
+                margin-left: 10%;
+            }
+
+}
+
 @media (max-width: 840px) 
 
 {
 
     .SobreNosContainer{
-height: 850px;    
+height: 1850px;    
     }
     
     .paragrafoContainer
@@ -171,12 +241,15 @@ height: 50%;
 @media (max-width: 800px) 
 
 {
-
+.SobreNosContainer
+{
+    height: 1300px;
+}
     .paragrafo
     {
 
         font-size: 0.9rem;
-        width: 60%;
+        width: 95%;
         height: 60%;
         line-height: 24px;
     }
@@ -196,14 +269,14 @@ height: 50%;
     .paragrafo
     {
 
-        font-size: 0.9rem;
-        width: 60%;
-        line-height: 28px;
+        font-size: 0.8rem;
+        width: 90%;
+        line-height: 23px;
     }
 
     .Tituloh1
     {
-        margin-top: 25px;
+        margin-top: 85px;
         font-size: 2rem;
     }
 } 
@@ -214,26 +287,39 @@ height: 50%;
 
 {
 
+    
         .SobreNosContainer
         {
-            height: 2000px;
-            top: 440px;
+            height: auto;
+            top: 480px;
            display: flex;
            flex-direction: column;
+           margin-bottom: 350px;
+           padding: 0;
         }
         .TextoContainer
         {
             width: 100%;
-            height: 50%;
+            height: auto;
             border-radius: 0px 0px 50px 50px;
+            padding: 0;
         }
         .FotoFundoContainer
         {
             width: 100%;
-            height: 41%;
+            height: 1200px;
+            background-color: red;
             border-radius: 0;
-            background-position: center center;
+            background-position: center center/cover;
+      
+           
+          
         }
+        .SobreNosContainer
+        {
+        margin-top: -200px;
+        }
+    
 
         .paragrafo
         {
@@ -241,6 +327,7 @@ height: 50%;
             font-size: 1.8rem;
             width: 80%;
             line-height: 44px;
+            margin: 0;
         }
     
         .Tituloh1
@@ -252,15 +339,37 @@ height: 50%;
     margin-bottom: 220px;
 }
 } 
+@media (max-width: 660px) 
+{
+    .TextoContainer
+    {
+        height: auto;
+        padding-bottom: 50px;
+        
+    }
 
+    .paragrafoContainer
+{
+    width: 100%;
+    height: auto;
+}
+}
 @media (max-width: 600px) 
 {
+
+    .SobreNosContainer
+    {
+    margin-top: -250px;
+    margin-bottom: 200px;
+    }
+
     .paragrafo
     {
 
         font-size: 1.4rem;
         width: 80%;
         line-height: 40px;
+        margin-bottom: 70px;
     }
 
     .Tituloh1
@@ -270,16 +379,21 @@ height: 50%;
     .TextoContainer
     {
         padding-bottom: -20px;
-        height: 40%;
+    height: 1800px; 
     }
+
 }
 
+@media (max-width: 520px ) 
+{
+   
+} 
 @media (max-width: 490px ) 
 
 {
    .SobreNosContainer
    {
-    top: 50px;
+    top: 240px;
    }
     .paragrafo
     {

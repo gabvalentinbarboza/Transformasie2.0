@@ -325,6 +325,7 @@
 
     .Container
     {
+        margin-top: 10px;
         margin-bottom: 380px;
         gap: 10px;
     }
@@ -446,17 +447,26 @@
     .Container
     {
     
-        margin-top: -150px;
+        margin-top: 50px;
     }
 }
 
+@media (max-width: 520px) {
+
+    .Container {
+        margin-top: 750px;
+    }
+
+
+}
 @media (max-width: 490px) 
 
 {
 .Container
 {
-    margin-top: -600px;
+    margin-top: 420px;
     padding: 0;
     margin-bottom: 300px;
 }
+
 }

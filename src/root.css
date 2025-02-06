@@ -3,7 +3,7 @@
 /* Definindo variáveis de cores */
 :root {
     --branco: #FFFFFF;
-    --preto: #000000;
+    --preto: #1a1a1a;
     --bege: #FDE4A1; /* Corrigido para 'bege' */
     --cinza-claro: #EDEDED; /* Renomeado para evitar duplicação */
     --vermelho-bordo: #9E1010;

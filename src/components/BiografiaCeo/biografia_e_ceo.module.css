@@ -1,0 +1,225 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.BioeMensagemContainer 
+{
+    width: 100%;
+    height: auto;
+    min-height: 1000px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 80px;
+
+}
+
+.TodoTextoContainer
+{
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+ margin-top: 80px;
+
+}
+
+.BiografiaContainer
+{
+    width: 70%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.MensagemContainer{
+    width: 70%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.Texto
+{
+    height: auto;
+    width: 70%;
+    color: var(--verde-musgo);
+    font-family: var(--font-poppins-regular);
+    font-size: 1.3rem;
+}
+
+.TituloBio
+{
+    font-family: var(--font-sora-regular);
+
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+align-items: flex-start;
+color: var(--vermelho-bordo);
+width: 100%;
+}
+
+.TituloMensagem
+{
+    font-family: var(--font-sora-regular);
+    margin-top: 50px;
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+align-items: flex-start;
+color: var(--vermelho-bordo);
+width: 100%;
+}
+
+
+@media (max-width: 1440px) 
+{
+    .BioeMensagemContainer 
+{
+    width: 100%;
+    height: auto;
+    min-height: 1000px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 80px;
+
+}
+
+.TodoTextoContainer
+{
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+ margin-top: 80px;
+
+}
+
+.BiografiaContainer
+{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.MensagemContainer{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.Texto
+{
+    height: auto;
+    width: 70%;
+    color: var(--verde-musgo);
+    font-family: var(--font-poppins-regular);
+    font-size: 1.3rem;
+}
+
+.TituloBio
+{
+    font-family: var(--font-sora-regular);
+
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+align-items: flex-start;
+color: var(--vermelho-bordo);
+width: 100%;
+}
+
+.TituloMensagem
+{
+    font-family: var(--font-sora-regular);
+    margin-top: 50px;
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+align-items: flex-start;
+color: var(--vermelho-bordo);
+width: 100%;
+}
+}
+
+@media (max-width: 1000px) 
+{
+    .Texto
+    {
+        font-size: 1.1rem;
+    }
+    .TituloBio{
+        font-size: 1.8rem;
+    }
+    .TituloMensagem
+    {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 850px)
+{
+    .TodoTextoContainer
+    {
+        width: 90%;
+       
+    }
+    .Texto
+    {
+        width: 100%;
+    }
+} 
+
+@media (max-width: 705px) 
+
+{
+    .BioeMensagemContainer
+    {
+        margin-top: 400px;
+    }
+    .Texto{
+        font-size: 1.4rem;
+    }
+    .TituloBio, .TituloMensagem
+    {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 660px) 
+{
+    .BioeMensagemContainer{
+    margin-top: 450px;
+    }
+}
+@media (max-width: 490px) 
+{
+    .BioeMensagemContainer{
+    margin-top: 250px;
+    }
+}
+

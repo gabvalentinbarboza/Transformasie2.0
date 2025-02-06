@@ -73,7 +73,7 @@ function FaleConoscoComponent() {
                 />
                 <textarea
                     className={Styles.textarea}
-                    placeholder="Digite sua mensagem"
+                    placeholder="Digite sua mensagem e informe o serviço que deseja contratar."
                     value={mensagem}
                     onChange={(e) => setMensagem(e.target.value)}
                 />

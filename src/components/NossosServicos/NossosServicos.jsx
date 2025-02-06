@@ -121,7 +121,7 @@ function NossosServicos() {
           <div className={Styles.BlocksParaVoceContainer}>
             <div className={Styles.ParaVoceLink} onClick={() => abrirModal(
               'Mentoria Individual',
-              ['Aguardando descrição'
+              ['Transforme sua relação com as finanças! Oferecemos consultoria individual personalizada para ajudá-lo a organizar e planejar sua vida financeira de forma prática e eficiente. Alcance seus objetivos, elimine preocupações e construa um futuro mais tranquilo com o suporte de especialistas dedicados ao seu sucesso .'
               ]
             )}>
               <div id="imageMentoriaIndividual" className={Styles.imageContainerParaVoce} style={{ backgroundImage: `url(${ImgMentoriaIndividual})` }}>
@@ -133,7 +133,7 @@ function NossosServicos() {
 
             <div className={Styles.ParaVoceLink} onClick={() => abrirModal(
             'Mentoria em grupo',
-            ['Aguardando descrição'
+            ['Você deseja alcançar suas metas financeiras e construir um futuro sólido? Se a resposta for sim, a nossa Mentoria em Grupo de Educação Financeira é o caminho ideal para você! Essa mentoria reúne pessoas com objetivos financeiros semelhantes, formando um grupo motivado a aprender, crescer e conquistar o sucesso financeiro. Com a orientação de especialistas em finanças pessoais, você terá acesso a um ambiente colaborativo e de aprendizado, preparado para ajudá-lo a enfrentar os desafios do mundo financeiro com mais segurança e confiança. Ps.: Você pode formar seu grupo exclusivo'
             ]
             )}>
               <div id="imageMentoriaGrupo" className={Styles.imageContainerParaVoce} style={{ backgroundImage: `url(${ImgMentoriaGrupo})` }}>
